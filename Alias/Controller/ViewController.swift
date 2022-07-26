@@ -14,8 +14,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func buttonPressed() {
-        performSegue(withIdentifier: "show", sender: nil)
+    @IBAction func showGameButtonPressed() {
+        performSegue(withIdentifier: "showGame", sender: nil)
     }
+    
+    @IBAction func showRulesButtonPressed() {
+        performSegue(withIdentifier: "showRules", sender: nil)
+    }
+    
 }
 

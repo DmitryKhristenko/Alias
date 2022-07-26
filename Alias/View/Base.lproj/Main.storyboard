@@ -16,24 +16,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2L7-IW-8BW">
-                                <rect key="frame" x="174" y="433" width="67" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <action selector="buttonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="TxN-VM-J9s"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="LcV-Fv-TV3">
+                                <rect key="frame" x="156.5" y="413" width="101" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2L7-IW-8BW">
+                                        <rect key="frame" x="0.0" y="0.0" width="101" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Show Game"/>
+                                        <connections>
+                                            <action selector="showGameButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="TxN-VM-J9s"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvb-2y-5Jt">
+                                        <rect key="frame" x="0.0" y="39" width="101" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Show Rules"/>
+                                        <connections>
+                                            <action selector="showRulesButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ynv-KQ-otZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LcV-Fv-TV3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eHu-MW-yTp"/>
+                            <constraint firstItem="LcV-Fv-TV3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mPZ-Qc-wV0"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="brx-pG-0sX"/>
                     <connections>
-                        <segue destination="BDO-9e-9dX" kind="presentation" id="bOd-Rh-rBk"/>
+                        <segue destination="BDO-9e-9dX" kind="presentation" identifier="showRules" id="bOd-Rh-rBk"/>
                         <segue destination="PIs-7g-eqc" kind="presentation" modalPresentationStyle="fullScreen" id="ilt-QS-Tsm"/>
-                        <segue destination="wB4-QZ-DF3" kind="show" identifier="show" id="ymY-Fp-1Pm"/>
+                        <segue destination="wB4-QZ-DF3" kind="show" identifier="showGame" id="ymY-Fp-1Pm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
