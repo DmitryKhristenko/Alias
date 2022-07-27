@@ -16,50 +16,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="M5f-pN-3lz">
-                                <rect key="frame" x="-68" y="-19" width="518" height="915"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M5f-pN-3lz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4a-fd-AzL">
-                                <rect key="frame" x="57" y="593" width="284" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="New game"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Play" cornerStyle="capsule">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="33"/>
-                                    <color key="baseForegroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="AJa-vF-rGZ" kind="show" id="ZMH-vJ-Zk6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sdd-WB-7ah">
-                                <rect key="frame" x="57" y="684" width="284" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="New game"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Rules" cornerStyle="capsule">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="33"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="BDO-9e-9dX" kind="presentation" id="N6d-sJ-kAv"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Thank" translatesAutoresizingMaskIntoConstraints="NO" id="U7f-Xo-QcS">
-                                <rect key="frame" x="20" y="205" width="339" height="264"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="4Fv-dq-XeF">
+                                <rect key="frame" x="82" y="587" width="250" height="175"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4a-fd-AzL">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="PZ8-fx-ez1"/>
+                                            <constraint firstAttribute="width" constant="250" id="b3o-X6-e2v"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="New game"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Play" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="33"/>
+                                            <color key="baseForegroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="AJa-vF-rGZ" kind="show" id="ZMH-vJ-Zk6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sdd-WB-7ah">
+                                        <rect key="frame" x="0.0" y="105" width="250" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="psh-N0-UdA"/>
+                                            <constraint firstAttribute="height" constant="70" id="xSV-PM-ya8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="New game"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Rules" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="33"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="BDO-9e-9dX" kind="presentation" id="N6d-sJ-kAv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Thank" translatesAutoresizingMaskIntoConstraints="NO" id="U7f-Xo-QcS">
+                                <rect key="frame" x="80" y="148" width="254" height="500"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="U7f-Xo-QcS" secondAttribute="trailing" constant="80" id="7qx-Oy-4Wp"/>
+                            <constraint firstAttribute="bottom" secondItem="M5f-pN-3lz" secondAttribute="bottom" id="G2a-0s-jOb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4Fv-dq-XeF" secondAttribute="bottom" constant="100" id="GkM-AT-1Qj"/>
+                            <constraint firstItem="M5f-pN-3lz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="JTQ-5V-MxU"/>
+                            <constraint firstItem="U7f-Xo-QcS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="80" id="Oct-y0-KH8"/>
+                            <constraint firstItem="M5f-pN-3lz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="R3C-d1-UYr"/>
+                            <constraint firstItem="U7f-Xo-QcS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="S1F-gL-WYX"/>
+                            <constraint firstItem="4Fv-dq-XeF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZXT-jB-WkD"/>
+                            <constraint firstItem="U7f-Xo-QcS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aal-hb-WWi"/>
+                            <constraint firstAttribute="trailing" secondItem="M5f-pN-3lz" secondAttribute="trailing" id="flJ-13-TRw"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Стартовый экран" id="brx-pG-0sX"/>
                 </viewController>
@@ -111,14 +133,47 @@
                     <view key="view" contentMode="scaleToFill" id="y2n-Hy-qnR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="60" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0L8-iy-0nE">
+                                <rect key="frame" x="28" y="73.5" width="358" height="635"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0L8-iy-0nE" secondAttribute="height" multiplier="207:367" id="0gP-bU-ODd"/>
+                                </constraints>
+                                <mutableString key="text">Цель игры - разъясните слова, используя описания, синонимы и
+антонимы. Цель игры – помочь другому игроку или
+команде правильно отгадать наибольшее количество
+слов, прежде чем полностью пересыплется песок в
+песочных часах. Фишки передвигаются по игровому полю
+в соответствии с количеством правильно угаданных слов.
+Выигрывает команда, которая первой достигнет финиша!    Краткие правила игры: 1. Команды играют поочередно. Разъясняющий команды
+меняется в каждом туре.
+2. Количество разгаданных слов соответствует количеству
+шагов по игровому полю.
+3. Сделанные ошибки и оставшиеся необъясненными
+слова — штрафные очки.
+4. Квадрат, на котором стоит фишка команды, указывает
+номер разъясняемого слова.
+5. Проход мимо квадрата «грабежа» - в следующем раунде
+игра с правом на «грабёж» с 5 карточками без песочных
+часов.
+6. Выигрывает команда, которая придет к финишу первой.</mutableString>
+                                <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="lhv-oY-lRh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0L8-iy-0nE" firstAttribute="centerY" secondItem="y2n-Hy-qnR" secondAttribute="centerY" constant="-30" id="bGO-gi-J7F"/>
+                            <constraint firstItem="0L8-iy-0nE" firstAttribute="centerX" secondItem="y2n-Hy-qnR" secondAttribute="centerX" id="tTU-12-GtC"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Правила" id="n6P-Q4-nyf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQ5-ez-5W3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3028" y="1604"/>
+            <point key="canvasLocation" x="3027.536231884058" y="1603.7946428571429"/>
         </scene>
         <!--Выберите категорию-->
         <scene sceneID="gQE-OE-h6H">
