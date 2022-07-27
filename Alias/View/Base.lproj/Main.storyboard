@@ -59,7 +59,7 @@
                                             <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="33"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="BDO-9e-9dX" kind="presentation" id="N6d-sJ-kAv"/>
+                                            <segue destination="BDO-9e-9dX" kind="presentation" id="Di1-v8-c4B"/>
                                         </connections>
                                     </button>
                                 </subviews>
