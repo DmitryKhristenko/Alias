@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A2ECBE02892FE160025DAD4 /* JokeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2ECBDF2892FE160025DAD4 /* JokeManager.swift */; };
+		0A2ECBE22892FE390025DAD4 /* JokeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2ECBE12892FE390025DAD4 /* JokeData.swift */; };
 		B506E104289272DA00C3ADE8 /* AliasWordsPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B506E103289272DA00C3ADE8 /* AliasWordsPack.swift */; };
 		B506E1072892765300C3ADE8 /* AliasGameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B506E1062892765300C3ADE8 /* AliasGameManager.swift */; };
 		E79A610828903883007E9C00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79A610728903883007E9C00 /* AppDelegate.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A2ECBDF2892FE160025DAD4 /* JokeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeManager.swift; sourceTree = "<group>"; };
+		0A2ECBE12892FE390025DAD4 /* JokeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeData.swift; sourceTree = "<group>"; };
 		B506E103289272DA00C3ADE8 /* AliasWordsPack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasWordsPack.swift; sourceTree = "<group>"; };
 		B506E1062892765300C3ADE8 /* AliasGameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasGameManager.swift; sourceTree = "<group>"; };
 		E79A610428903883007E9C00 /* Alias.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alias.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +52,8 @@
 			children = (
 				B506E103289272DA00C3ADE8 /* AliasWordsPack.swift */,
 				B506E1062892765300C3ADE8 /* AliasGameManager.swift */,
+				0A2ECBDF2892FE160025DAD4 /* JokeManager.swift */,
+				0A2ECBE12892FE390025DAD4 /* JokeData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,7 +190,9 @@
 				B506E1072892765300C3ADE8 /* AliasGameManager.swift in Sources */,
 				E79A610828903883007E9C00 /* AppDelegate.swift in Sources */,
 				E79A610A28903883007E9C00 /* SceneDelegate.swift in Sources */,
+				0A2ECBE02892FE160025DAD4 /* JokeManager.swift in Sources */,
 				B506E104289272DA00C3ADE8 /* AliasWordsPack.swift in Sources */,
+				0A2ECBE22892FE390025DAD4 /* JokeData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
