@@ -9,13 +9,8 @@ import Foundation
 
 struct JokeManager {
     
-    let jokeURL = "https://joke.deno.dev"
-    
-    func fetchJoke() {
-        let urlString = jokeURL
-        print(urlString)
-    }
-    
+    private let jokeURL = "https://joke.deno.dev"
+        
     func getJoke() {
         
         if let url = URL(string: jokeURL) {
@@ -33,7 +28,7 @@ struct JokeManager {
         }
     }
     
-    func parseJSON(jokeData: Data) {
+    private func parseJSON(jokeData: Data) {
         let decoder = JSONDecoder()
         do {
             let decodedData = try decoder.decode(JokeData.self, from: jokeData)
