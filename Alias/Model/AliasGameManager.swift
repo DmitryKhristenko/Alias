@@ -6,11 +6,10 @@
 //
 
 struct AliasGameManager {
-    var score = 0
     
+    var score = 0
     private var currentRound = 1
     private var wordIndex = 0
-    
     private var words: [String]
     
     mutating func getNextWord() -> String {
@@ -31,7 +30,6 @@ struct AliasGameManager {
         if Int.random(in: 0...100) % 6 == 0 {
             print("ДЕЙСТВИЕ")
         }
-        
         return word
     }
     
@@ -40,10 +38,19 @@ struct AliasGameManager {
     }
     
     mutating func scoreUp() {
-        score += 1
+        // это не будет работать как надо в случае выпадения "Действия" рандомом. Нужна иная логика.
+        if words[wordIndex] == "ДЕЙСТВИЕ" {
+            score += 3
+        } else {
+            score += 1
+        }
     }
     
     mutating func scoreDown() {
-        score -= 1
+        if words[wordIndex] == "ДЕЙСТВИЕ" {
+            score -= 3
+        } else {
+            score -= 1
+        }
     }
 }
