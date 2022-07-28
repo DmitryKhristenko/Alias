@@ -1,18 +1,11 @@
 //
-//  AliasWordsPack.swift
+//  WordsText.swift
 //  Alias
 //
 //  Created by Дмитрий Х on 28.07.22.
 //
 
 import Foundation
-
-typealias Word = String
-
-struct AliasWordsPack {
-    let title: String        // Название категории
-    let words: [Word]     // Список слов в Категории
-}
 extension AliasWordsPack {
     static func getAliasWordsCategories() -> [AliasWordsPack] {
         // логика
@@ -199,39 +192,3 @@ extension AliasWordsPack {
         return words
     }
 }
-/*
-extension String {
-    // Get the filename from a String
-    func fileName() -> String {
-        return URL(fileURLWithPath: self).deletingPathExtension().lastPathComponent
-    }
-    
-    // Get the file extension from a String
-    func fileExtension() -> String {
-        return URL(fileURLWithPath: self).pathExtension
-    }
-}
-
-func readCSV(inputFile: String, separator: String) -> [String] {
-    // Split the file name
-    let fileExtension = inputFile.fileExtension()
-    let fileName = inputFile.fileName()
-    
-    //Get the file URL
-    let fileURL = try! FileManager.default.url(for: .desktopDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
-    
-    let inputFile = fileURL.appendingPathComponent(fileName).appendingPathExtension(fileExtension)
-    // Get Data
-    do {
-        let savedData = try String(contentsOf: inputFile)
-        return savedData.components(separatedBy: separator)
-    } catch {
-        return ["Error file couldn't be found"]
-    }
-}
-
-var myData = readCSV(inputFile: "animals_words_.csv", separator: ",")
-///Users/dmitry4h/iOS dev/Alias/Alias/Model
-
-import Ali
-*/
