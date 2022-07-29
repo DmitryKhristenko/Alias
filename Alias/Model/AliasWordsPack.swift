@@ -5,8 +5,6 @@
 //  Created by Дмитрий Х on 28.07.22.
 //
 
-import Foundation
-
 typealias Word = String
 
 struct AliasWordsPack {
