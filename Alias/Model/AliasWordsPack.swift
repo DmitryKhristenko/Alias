@@ -7,7 +7,7 @@
 
 typealias Word = String
 
-struct AliasWordsPack {
+struct AliasWordsPack: Decodable {
     let title: String
     let words: [Word]
 }
