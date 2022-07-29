@@ -84,7 +84,7 @@
         <!--Игра-->
         <scene sceneID="sB1-JX-Psv">
             <objects>
-                <viewController id="wB4-QZ-DF3" sceneMemberID="viewController">
+                <viewController id="wB4-QZ-DF3" customClass="AliasGameViewController" customModule="Alias" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oIE-aZ-wqs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -120,16 +120,25 @@
                                         <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Сбросить"/>
+                                        <connections>
+                                            <action selector="resetButtonPressed" destination="wB4-QZ-DF3" eventType="touchUpInside" id="Q0B-DZ-jhe"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHV-EF-KNj">
                                         <rect key="frame" x="124.5" y="0.0" width="125" height="100"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Правильно"/>
+                                        <connections>
+                                            <action selector="correctButtonPressed" destination="wB4-QZ-DF3" eventType="touchUpInside" id="F7u-XK-968"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ar6-yV-fhm">
                                         <rect key="frame" x="249.5" y="0.0" width="124.5" height="100"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Пропустить"/>
+                                        <connections>
+                                            <action selector="skipButtonPressed" destination="wB4-QZ-DF3" eventType="touchUpInside" id="am1-oj-wzR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -154,6 +163,9 @@
                         <barButtonItem key="backBarButtonItem" title="Продолжить игру" id="ibn-Eu-vB0"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="scoreLabel" destination="2Yo-I4-flC" id="qbN-my-Zki"/>
+                        <outlet property="timerLabel" destination="MvR-X0-8A5" id="iaX-c3-VN0"/>
+                        <outlet property="wordsLabel" destination="XXB-5w-KUR" id="AQu-eT-BSy"/>
                         <segue destination="W5M-DB-Wfa" kind="show" id="raf-JL-Kt6"/>
                     </connections>
                 </viewController>
@@ -164,7 +176,7 @@
         <!--Результат-->
         <scene sceneID="Lh2-ga-bMS">
             <objects>
-                <viewController id="W5M-DB-Wfa" sceneMemberID="viewController">
+                <viewController id="W5M-DB-Wfa" customClass="ResultsViewController" customModule="Alias" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bhg-4t-MIY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -202,6 +214,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Результат" id="uGL-bC-pDK"/>
+                    <connections>
+                        <outlet property="jokePunchlineLabel" destination="qNI-CP-1KJ" id="bfS-jz-GuR"/>
+                        <outlet property="jokeSetupLabel" destination="zw3-LT-vR8" id="bo1-ue-A72"/>
+                        <outlet property="scoreLabel" destination="VT4-zN-GXA" id="TT5-uq-QGW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kD9-xL-YcO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -259,21 +276,39 @@
         <!--Выберите категорию-->
         <scene sceneID="gQE-OE-h6H">
             <objects>
-                <tableViewController id="AJa-vF-rGZ" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="gpi-Wf-c3F">
+                <tableViewController id="AJa-vF-rGZ" customClass="WordCategoriesTableViewController" customModule="Alias" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="kYa-9j-XQC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <sections/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="wordsPackTitleCell" textLabel="hgy-N6-CCd" style="IBUITableViewCellStyleDefault" id="cRT-7u-BLl">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="47.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cRT-7u-BLl" id="X7Q-Lk-08P">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="47.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hgy-N6-CCd">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="47.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="wB4-QZ-DF3" kind="show" id="dgz-SA-4Hn"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="AJa-vF-rGZ" id="HbR-nb-Uss"/>
                             <outlet property="delegate" destination="AJa-vF-rGZ" id="KfT-e5-LXt"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Выберите категорию" id="9TY-zi-SGR"/>
-                    <connections>
-                        <segue destination="wB4-QZ-DF3" kind="show" id="dJw-qX-CPN"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gl8-Hh-KGR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
