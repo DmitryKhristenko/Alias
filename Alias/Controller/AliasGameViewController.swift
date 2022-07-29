@@ -12,31 +12,32 @@ class AliasGameViewController: UIViewController {
     @IBOutlet var timerLabel: UILabel!
     @IBOutlet var scoreLabel: UILabel!
     @IBOutlet var wordsLabel: UILabel!
-    
-    var userScore = 0
-    
+        
     var aliasGameManager: AliasGameManager!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        updateUI()
     }
     
     @IBAction func correctButtonPressed() {
-        userScore += 1
-        scoreLabel.text = "\(userScore)"
+        aliasGameManager.scoreUp()
+        updateUI()
     }
     
     @IBAction func skipButtonPressed() {
-        if userScore == 0 {
-            userScore = 0
-        } else {
-            userScore -= 1
-            scoreLabel.text = "\(userScore)"
-        }
+        aliasGameManager.scoreDown()
+        updateUI()
     }
     
     @IBAction func resetButtonPressed() {
-        scoreLabel.text = "\(0)"
-        userScore = 0
+        
+
     }
+    
+    private func updateUI() {
+            scoreLabel.text = String(aliasGameManager.score)
+            wordsLabel.text = aliasGameManager.getNextWord()
+        }
 }
