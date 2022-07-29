@@ -37,7 +37,7 @@ class AliasGameViewController: UIViewController {
     }
     
     private func updateUI() {
-            scoreLabel.text = String(aliasGameManager.score)
-            wordsLabel.text = aliasGameManager.getNextWord()
-        }
+        scoreLabel.text = String(aliasGameManager.score)
+        wordsLabel.text = aliasGameManager.getWord()
+    }
 }
