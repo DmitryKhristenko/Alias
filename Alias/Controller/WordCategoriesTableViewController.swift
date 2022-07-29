@@ -31,9 +31,12 @@ class WordCategoriesTableViewController: UITableViewController {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let aliasGameVC = segue.destination as? AliasGameViewController else { return }
         
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         let wordsPack = aliasWordsPack[indexPath.row]
         
+        let aliasGameManager = AliasGameManager.getManagerWith(wordsPack)
+        aliasGameVC.aliasGameManager = aliasGameManager
     }
 }
