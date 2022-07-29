@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Стартовый экран-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Alias" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,52 +16,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="M5f-pN-3lz">
-                                <rect key="frame" x="-68" y="-19" width="518" height="915"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M5f-pN-3lz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4a-fd-AzL">
-                                <rect key="frame" x="57" y="593" width="284" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="New game"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Play" cornerStyle="capsule">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="33"/>
-                                    <color key="baseForegroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="AJa-vF-rGZ" kind="show" id="ZMH-vJ-Zk6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sdd-WB-7ah">
-                                <rect key="frame" x="57" y="684" width="284" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="New game"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Rules" cornerStyle="capsule">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="33"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="BDO-9e-9dX" kind="presentation" id="N6d-sJ-kAv"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Thank" translatesAutoresizingMaskIntoConstraints="NO" id="U7f-Xo-QcS">
-                                <rect key="frame" x="20" y="205" width="339" height="264"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="4Fv-dq-XeF">
+                                <rect key="frame" x="100" y="612" width="214" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4a-fd-AzL">
+                                        <rect key="frame" x="0.0" y="0.0" width="214" height="57.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="New game"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Играть" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="33"/>
+                                            <color key="baseForegroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="AJa-vF-rGZ" kind="show" id="ZMH-vJ-Zk6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sdd-WB-7ah">
+                                        <rect key="frame" x="0.0" y="92.5" width="214" height="57.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="New game"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Rules" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="33"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="BDO-9e-9dX" kind="presentation" id="Di1-v8-c4B"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="LDm-ba-yvD"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Thank" translatesAutoresizingMaskIntoConstraints="NO" id="U7f-Xo-QcS">
+                                <rect key="frame" x="100" y="98" width="214" height="500"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="U7f-Xo-QcS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="50o-XA-8Rg"/>
+                            <constraint firstItem="4Fv-dq-XeF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="5MQ-hM-c1E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Fv-dq-XeF" secondAttribute="trailing" constant="100" id="BZn-t2-O5b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4Fv-dq-XeF" secondAttribute="bottom" constant="100" id="KFP-SB-3RK"/>
+                            <constraint firstAttribute="trailing" secondItem="U7f-Xo-QcS" secondAttribute="trailing" constant="100" id="PLw-IL-Sar"/>
+                            <constraint firstItem="U7f-Xo-QcS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="lBr-NK-ZKn"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Стартовый экран" id="brx-pG-0sX"/>
+                    <navigationItem key="navigationItem" id="brx-pG-0sX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -70,39 +84,145 @@
         <!--Игра-->
         <scene sceneID="sB1-JX-Psv">
             <objects>
-                <viewController id="wB4-QZ-DF3" sceneMemberID="viewController">
+                <viewController id="wB4-QZ-DF3" customClass="AliasGameViewController" customModule="Alias" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oIE-aZ-wqs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dOc-ae-1Yc">
+                                <rect key="frame" x="20" y="160" width="374" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label для таймера" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MvR-X0-8A5">
+                                        <rect key="frame" x="0.0" y="0.0" width="177" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label для счета" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Yo-I4-flC">
+                                        <rect key="frame" x="197" y="0.0" width="177" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label  для слова" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXB-5w-KUR">
+                                <rect key="frame" x="142.5" y="438" width="129" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="XKW-gr-y0N">
+                                <rect key="frame" x="20" y="712" width="374" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWS-ge-FdU">
+                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="100"/>
+                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Сбросить"/>
+                                        <connections>
+                                            <action selector="resetButtonPressed" destination="wB4-QZ-DF3" eventType="touchUpInside" id="Q0B-DZ-jhe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHV-EF-KNj">
+                                        <rect key="frame" x="124.5" y="0.0" width="125" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Правильно"/>
+                                        <connections>
+                                            <action selector="correctButtonPressed" destination="wB4-QZ-DF3" eventType="touchUpInside" id="F7u-XK-968"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ar6-yV-fhm">
+                                        <rect key="frame" x="249.5" y="0.0" width="124.5" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Пропустить"/>
+                                        <connections>
+                                            <action selector="skipButtonPressed" destination="wB4-QZ-DF3" eventType="touchUpInside" id="am1-oj-wzR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="gTW-8r-OIF"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ILn-4D-Hmd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XKW-gr-y0N" firstAttribute="leading" secondItem="ILn-4D-Hmd" secondAttribute="leading" constant="20" id="2J3-zH-54r"/>
+                            <constraint firstItem="ILn-4D-Hmd" firstAttribute="trailing" secondItem="XKW-gr-y0N" secondAttribute="trailing" constant="20" id="CEK-m5-Pr9"/>
+                            <constraint firstAttribute="trailing" secondItem="dOc-ae-1Yc" secondAttribute="trailing" constant="20" id="Dag-h6-fd4"/>
+                            <constraint firstItem="ILn-4D-Hmd" firstAttribute="bottom" secondItem="XKW-gr-y0N" secondAttribute="bottom" constant="50" id="Fed-p1-w1p"/>
+                            <constraint firstItem="dOc-ae-1Yc" firstAttribute="top" secondItem="ILn-4D-Hmd" secondAttribute="top" constant="20" id="IUl-SW-NS4"/>
+                            <constraint firstItem="XXB-5w-KUR" firstAttribute="centerY" secondItem="oIE-aZ-wqs" secondAttribute="centerY" id="cgY-cY-t6x"/>
+                            <constraint firstItem="dOc-ae-1Yc" firstAttribute="leading" secondItem="oIE-aZ-wqs" secondAttribute="leading" constant="20" id="v2U-lB-5OB"/>
+                            <constraint firstItem="XXB-5w-KUR" firstAttribute="centerX" secondItem="oIE-aZ-wqs" secondAttribute="centerX" id="xDF-8Z-HlZ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Игра" id="b9c-v8-B65">
                         <barButtonItem key="backBarButtonItem" title="Продолжить игру" id="ibn-Eu-vB0"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="scoreLabel" destination="2Yo-I4-flC" id="qbN-my-Zki"/>
+                        <outlet property="timerLabel" destination="MvR-X0-8A5" id="iaX-c3-VN0"/>
+                        <outlet property="wordsLabel" destination="XXB-5w-KUR" id="AQu-eT-BSy"/>
                         <segue destination="W5M-DB-Wfa" kind="show" id="raf-JL-Kt6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kex-B9-lSh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3951" y="834"/>
+            <point key="canvasLocation" x="3950.7246376811599" y="833.70535714285711"/>
         </scene>
         <!--Результат-->
         <scene sceneID="Lh2-ga-bMS">
             <objects>
-                <viewController id="W5M-DB-Wfa" sceneMemberID="viewController">
+                <viewController id="W5M-DB-Wfa" customClass="ResultsViewController" customModule="Alias" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bhg-4t-MIY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label для setUp шутки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zw3-LT-vR8">
+                                <rect key="frame" x="30" y="184" width="331" height="163"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label для Punchline шутки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNI-CP-1KJ">
+                                <rect key="frame" x="60" y="429" width="293" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label для баллов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VT4-zN-GXA">
+                                <rect key="frame" x="72" y="577" width="270" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbu-gk-brO">
+                                <rect key="frame" x="77" y="732" width="115" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Сбросить"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="qDO-yY-fAn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Результат" id="uGL-bC-pDK"/>
+                    <connections>
+                        <outlet property="jokePunchlineLabel" destination="qNI-CP-1KJ" id="bfS-jz-GuR"/>
+                        <outlet property="jokeSetupLabel" destination="zw3-LT-vR8" id="bo1-ue-A72"/>
+                        <outlet property="scoreLabel" destination="VT4-zN-GXA" id="TT5-uq-QGW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kD9-xL-YcO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4874" y="834"/>
+            <point key="canvasLocation" x="4873.913043478261" y="833.70535714285711"/>
         </scene>
         <!--Правила-->
         <scene sceneID="cPp-kh-eq8">
@@ -111,14 +231,47 @@
                     <view key="view" contentMode="scaleToFill" id="y2n-Hy-qnR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="60" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0L8-iy-0nE">
+                                <rect key="frame" x="28" y="73.5" width="358" height="635"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0L8-iy-0nE" secondAttribute="height" multiplier="207:367" id="0gP-bU-ODd"/>
+                                </constraints>
+                                <string key="text">Цель игры - разъясните слова, используя описания, синонимы и
+антонимы. Цель игры – помочь другому игроку или
+команде правильно отгадать наибольшее количество
+слов, прежде чем полностью пересыплется песок в
+песочных часах. Фишки передвигаются по игровому полю
+в соответствии с количеством правильно угаданных слов.
+Выигрывает команда, которая первой достигнет финиша!    Краткие правила игры: 1. Команды играют поочередно. Разъясняющий команды
+меняется в каждом туре.
+2. Количество разгаданных слов соответствует количеству
+шагов по игровому полю.
+3. Сделанные ошибки и оставшиеся необъясненными
+слова — штрафные очки.
+4. Квадрат, на котором стоит фишка команды, указывает
+номер разъясняемого слова.
+5. Проход мимо квадрата «грабежа» - в следующем раунде
+игра с правом на «грабёж» с 5 карточками без песочных
+часов.
+6. Выигрывает команда, которая придет к финишу первой.</string>
+                                <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="lhv-oY-lRh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0L8-iy-0nE" firstAttribute="centerY" secondItem="y2n-Hy-qnR" secondAttribute="centerY" constant="-30" id="bGO-gi-J7F"/>
+                            <constraint firstItem="0L8-iy-0nE" firstAttribute="centerX" secondItem="y2n-Hy-qnR" secondAttribute="centerX" id="tTU-12-GtC"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Правила" id="n6P-Q4-nyf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQ5-ez-5W3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3028" y="1604"/>
+            <point key="canvasLocation" x="3027.536231884058" y="1603.7946428571429"/>
         </scene>
         <!--Выберите категорию-->
         <scene sceneID="gQE-OE-h6H">
@@ -126,7 +279,7 @@
                 <tableViewController id="AJa-vF-rGZ" customClass="WordCategoriesTableViewController" customModule="Alias" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="kYa-9j-XQC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="wordsPackTitleCell" textLabel="hgy-N6-CCd" style="IBUITableViewCellStyleDefault" id="cRT-7u-BLl">
@@ -151,15 +304,15 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="AJa-vF-rGZ" id="DDX-xy-SV7"/>
-                            <outlet property="delegate" destination="AJa-vF-rGZ" id="DtZ-ld-fX5"/>
+                            <outlet property="dataSource" destination="AJa-vF-rGZ" id="HbR-nb-Uss"/>
+                            <outlet property="delegate" destination="AJa-vF-rGZ" id="KfT-e5-LXt"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Выберите категорию" id="9TY-zi-SGR"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gl8-Hh-KGR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3028" y="834"/>
+            <point key="canvasLocation" x="3027.536231884058" y="833.70535714285711"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kaL-cu-tqb">
