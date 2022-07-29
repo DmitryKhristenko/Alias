@@ -7,9 +7,17 @@
 
 import Foundation
 
+protocol JokeManagerDelegate {
+    
+    func didUpdateJoke(_ jokeSetup: JokeManager, jokePunchline: JokeData)
+    func didFailWithError(error: Error)
+}
+
 struct JokeManager {
     
     private let jokeURL = "https://joke.deno.dev"
+    
+    var delegate: JokeManagerDelegate?
         
     func getJoke() {
         
@@ -17,26 +25,32 @@ struct JokeManager {
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: url) { data, response, error in
                 if error != nil {
-                    print(error!)
+                    delegate?.didFailWithError(error: error!)
                     return
                 }
                 if let safeData = data {
-                    parseJSON(jokeData: safeData)
+                    if let joke = parseJSON(safeData) {
+                        delegate?.didUpdateJoke(self, jokePunchline: joke)
+
+                    }
                 }
             }
             task.resume()
         }
     }
     
-    private func parseJSON(jokeData: Data) {
+    private func parseJSON(_ jokeData: Data) -> JokeData? {
         let decoder = JSONDecoder()
         do {
             let decodedData = try decoder.decode(JokeData.self, from: jokeData)
             let jokeSetup = decodedData.setup
             let punchLine = decodedData.punchline
-            print(jokeSetup, punchLine)
+            
+            let joke = JokeData(setup: jokeSetup, punchline: punchLine)
+            return joke
         } catch {
-            print(error)
+            delegate?.didFailWithError(error: error)
+            return nil
         }
     }
 }
