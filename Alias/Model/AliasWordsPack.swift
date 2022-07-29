@@ -8,17 +8,15 @@
 typealias Word = String
 
 struct AliasWordsPack {
-    let title: String        // Название категории
-    let words: [Word]     // Список слов в Категории
+    let title: String
+    let words: [Word]
 }
+
 extension AliasWordsPack {
     static func getAliasWordsCategories() -> [AliasWordsPack] {
         
-        // логика
+        // 4 категории по 40 слов в каждой
         let words = [
-            
-            // по 40 слов в каждой из 4-х категорий.
-            
             AliasWordsPack(title: "Животные",
                            words: [
                             "Осел",
@@ -62,7 +60,6 @@ extension AliasWordsPack {
                             "Белка",
                             "Утка"
                            ]),
-            
             AliasWordsPack(title: "Места",
                            words: [
                             "Кухня",
@@ -106,7 +103,6 @@ extension AliasWordsPack {
                             "Берн",
                             "Самара"
                            ]),
-            
             AliasWordsPack(title: "Напитки",
                            words: [
                             "Шампанское",
@@ -150,7 +146,6 @@ extension AliasWordsPack {
                             "Эспрессо",
                             "Байкал",
                            ]),
-            
             AliasWordsPack(title: "Эмоции",
                            words: [
                             "Безразличие",
@@ -195,6 +190,7 @@ extension AliasWordsPack {
                             "Умиротворение"
                            ])
         ]
+        
         return words
     }
 }

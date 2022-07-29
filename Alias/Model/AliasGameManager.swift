@@ -6,14 +6,15 @@
 //
 
 struct AliasGameManager {
-    
     enum ActionWord: Word {
         case action = "ДЕЙСТВИЕ"
-        
     }
+    
     var score = 0
+    
     private var currentRound = 1
     private var wordIndex = 0
+    
     private var words: [String]
     
     mutating func getWord() -> String {
@@ -37,7 +38,6 @@ struct AliasGameManager {
     }
     
     mutating func scoreUp() {
-        
         if words[wordIndex] == ActionWord.action.rawValue {
             score += 3
         } else {
@@ -58,10 +58,10 @@ struct AliasGameManager {
     }
     
     static func getManagerWith(_ aliasWordsPack: AliasWordsPack) -> AliasGameManager {
-        
         var words = aliasWordsPack.words
-        let actionWordQTY = words.count / 15 // Слово ДЕЙСТВИЕ будет в 15 раз меньше чем остальных слов
-        print(actionWordQTY)
+        
+        // Слово ДЕЙСТВИЕ будет в 15 раз меньше чем остальных слов
+        let actionWordQTY = words.count / 15
         
         for _ in 0...actionWordQTY {
             words.append(ActionWord.action.rawValue)
@@ -71,5 +71,4 @@ struct AliasGameManager {
         
         return aliasGameManager
     }
-    
 }
