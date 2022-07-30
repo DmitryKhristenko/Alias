@@ -17,6 +17,7 @@ class AliasGameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
         
         updateUI()
     }
@@ -32,8 +33,7 @@ class AliasGameViewController: UIViewController {
     }
     
     @IBAction func resetButtonPressed() {
-        
-
+        navigationController?.popToRootViewController(animated: true)
     }
     
     private func updateUI() {
