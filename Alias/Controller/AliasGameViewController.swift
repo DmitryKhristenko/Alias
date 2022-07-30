@@ -23,13 +23,13 @@ class AliasGameViewController: UIViewController {
     @IBAction func correctButtonPressed() {
         aliasGameManager.scoreUp()
         updateUI()
-        AliasSoundManager.sharedInstance.playSound(soundName: "correct")
+        SoundManager.shared.playSound(for: SoundManager.SoundType.correct)
     }
     
     @IBAction func skipButtonPressed() {
         aliasGameManager.scoreDown()
         updateUI()
-        AliasSoundManager.sharedInstance.playSound(soundName: "skip")
+        SoundManager.shared.playSound(for: SoundManager.SoundType.skip)
     }
     
     @IBAction func resetButtonPressed() {
