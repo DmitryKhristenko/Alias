@@ -58,5 +58,4 @@ class AliasGameViewController: UIViewController {
             performSegue(withIdentifier: "showResults", sender: nil)
         }
     }
-    
-}
+    }
