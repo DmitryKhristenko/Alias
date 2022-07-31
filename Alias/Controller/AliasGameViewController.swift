@@ -13,7 +13,7 @@ class AliasGameViewController: UIViewController {
     @IBOutlet var wordsLabel: UILabel!
     
     var aliasGameManager: AliasGameManager!
-    // var aliasSoundManager: AliasSoundManager!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,20 +21,18 @@ class AliasGameViewController: UIViewController {
     }
     
     @IBAction func correctButtonPressed() {
+        SoundManager.shared.playSound(for: .correct)
         aliasGameManager.scoreUp()
         updateUI()
-        SoundManager.shared.playSound(for: SoundManager.SoundType.correct)
     }
     
     @IBAction func skipButtonPressed() {
+        SoundManager.shared.playSound(for: .skip)
         aliasGameManager.scoreDown()
         updateUI()
-        SoundManager.shared.playSound(for: SoundManager.SoundType.skip)
     }
     
     @IBAction func resetButtonPressed() {
-        
-        
     }
     
     private func updateUI() {
