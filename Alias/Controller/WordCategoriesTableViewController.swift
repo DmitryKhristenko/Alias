@@ -22,7 +22,12 @@ class WordCategoriesTableViewController: UITableViewController {
         let wordsPackTitle = aliasWordsPack[indexPath.row]
         var content = cell.defaultContentConfiguration()
         
-        content.text = wordsPackTitle.title
+        let font = UIFont(name: "Marker Felt", size: 28) ?? .systemFont(ofSize: 28)
+        
+        let attributedText: NSAttributedString? = .init(string: wordsPackTitle.title,
+                                                        attributes: [.font: font,
+                                                                     .foregroundColor: UIColor.systemTeal])
+        content.attributedText = attributedText
         
         cell.contentConfiguration = content
 
