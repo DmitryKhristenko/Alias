@@ -13,15 +13,15 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Alias" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M5f-pN-3lz">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4Fv-dq-XeF">
-                                <rect key="frame" x="80" y="577.5" width="254" height="135"/>
+                                <rect key="frame" x="80" y="604.5" width="254" height="135"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4a-fd-AzL">
                                         <rect key="frame" x="0.0" y="0.0" width="254" height="58.5"/>
@@ -61,7 +61,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="-15" translatesAutoresizingMaskIntoConstraints="NO" id="Qrz-Ss-29y" userLabel="Stack View  Title">
-                                <rect key="frame" x="80" y="345" width="254.5" height="152.5"/>
+                                <rect key="frame" x="80" y="372" width="254.5" height="152.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alias" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZIg-BS-HZw">
                                         <rect key="frame" x="5" y="0.0" width="244" height="114.5"/>
@@ -104,11 +104,11 @@
             <objects>
                 <viewController id="wB4-QZ-DF3" customClass="AliasGameViewController" customModule="Alias" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oIE-aZ-wqs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="-150" translatesAutoresizingMaskIntoConstraints="NO" id="dOc-ae-1Yc">
-                                <rect key="frame" x="20" y="64" width="374" height="41"/>
+                                <rect key="frame" x="20" y="160" width="374" height="41"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60  секунд" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MvR-X0-8A5">
                                         <rect key="frame" x="0.0" y="0.0" width="224.5" height="41"/>
@@ -131,13 +131,13 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нажми на &quot;Начать игру&quot;,   когда будешь готов  " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="XXB-5w-KUR">
-                                <rect key="frame" x="50" y="277.5" width="314" height="287"/>
+                                <rect key="frame" x="50" y="311.5" width="314" height="273"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="55"/>
                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fbM-u4-DFu">
-                                <rect key="frame" x="20" y="614.5" width="374" height="177.5"/>
+                                <rect key="frame" x="20" y="634.5" width="374" height="177.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWS-ge-FdU">
                                         <rect key="frame" x="5" y="0.0" width="364" height="52.5"/>
@@ -233,23 +233,23 @@
             <objects>
                 <viewController id="W5M-DB-Wfa" customClass="ResultsViewController" customModule="Alias" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bhg-4t-MIY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Панчлайн" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNI-CP-1KJ">
-                                <rect key="frame" x="20" y="143" width="374" height="33"/>
+                                <rect key="frame" x="20" y="239" width="374" height="33"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Результат" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VT4-zN-GXA">
-                                <rect key="frame" x="220" y="405" width="174" height="32"/>
+                                <rect key="frame" x="220" y="432" width="174" height="32"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbu-gk-brO">
-                                <rect key="frame" x="50" y="722" width="314" height="70"/>
+                                <rect key="frame" x="50" y="742" width="314" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="n6H-cM-2To"/>
                                 </constraints>
@@ -264,13 +264,13 @@
                                 </buttonConfiguration>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваш результат:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3kF-kV-vfR">
-                                <rect key="frame" x="20" y="405" width="214" height="32"/>
+                                <rect key="frame" x="20" y="432" width="214" height="32"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Предисловие к шутке" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zw3-LT-vR8">
-                                <rect key="frame" x="20" y="94" width="374" height="39"/>
+                                <rect key="frame" x="20" y="190" width="374" height="39"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -312,11 +312,11 @@
             <objects>
                 <viewController id="A9t-MI-qT2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y2n-Hy-qnR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="788"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iea-UF-tEO">
-                                <rect key="frame" x="138.5" y="772" width="137.5" height="60"/>
+                                <rect key="frame" x="138.5" y="718" width="137.5" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="xDF-6H-Hqh"/>
                                 </constraints>
@@ -330,11 +330,11 @@
                                     <color key="baseForegroundColor" red="0.58039215686274503" green="0.12941176470588234" blue="0.5725490196078431" alpha="0.70012417218543044" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="yQv-2v-w4b"/>
+                                    <segue destination="mq0-Bq-f93" kind="unwind" unwindAction="unwindSegue:" id="PSE-DG-Fmr"/>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c9W-i5-HTs">
-                                <rect key="frame" x="0.0" y="108" width="414" height="654"/>
+                                <rect key="frame" x="0.0" y="108" width="414" height="600"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e71-eR-URw">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1400"/>
@@ -473,9 +473,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Правила" id="n6P-Q4-nyf"/>
-                    <size key="freeformSize" width="414" height="896"/>
+                    <size key="freeformSize" width="414" height="842"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQ5-ez-5W3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="mq0-Bq-f93" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3027.536231884058" y="1603.7946428571429"/>
         </scene>
@@ -484,7 +485,7 @@
             <objects>
                 <tableViewController id="AJa-vF-rGZ" customClass="WordCategoriesTableViewController" customModule="Alias" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="kYa-9j-XQC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -557,10 +558,6 @@
             <point key="canvasLocation" x="1222" y="834"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Di1-v8-c4B"/>
-        <segue reference="yQv-2v-w4b"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Background" width="564" height="1002"/>
         <systemColor name="labelColor">
