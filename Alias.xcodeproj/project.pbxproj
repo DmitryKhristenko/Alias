@@ -13,6 +13,9 @@
 		B506E1072892765300C3ADE8 /* AliasGameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B506E1062892765300C3ADE8 /* AliasGameManager.swift */; };
 		E786F02D2894833400171591 /* AliasWordCategories.json in Resources */ = {isa = PBXBuildFile; fileRef = E786F02C2894833400171591 /* AliasWordCategories.json */; };
 		E786F02F2894836D00171591 /* AliasDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E786F02E2894836D00171591 /* AliasDataManager.swift */; };
+		B506E11F289471E000C3ADE8 /* AliasSoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B506E11E289471E000C3ADE8 /* AliasSoundManager.swift */; };
+		B506E1272894813C00C3ADE8 /* correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B506E1252894813C00C3ADE8 /* correct.mp3 */; };
+		B506E1282894813C00C3ADE8 /* skip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B506E1262894813C00C3ADE8 /* skip.mp3 */; };
 		E79A610828903883007E9C00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79A610728903883007E9C00 /* AppDelegate.swift */; };
 		E79A610A28903883007E9C00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79A610928903883007E9C00 /* SceneDelegate.swift */; };
 		E79A610C28903883007E9C00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79A610B28903883007E9C00 /* ViewController.swift */; };
@@ -30,6 +33,9 @@
 		B506E1062892765300C3ADE8 /* AliasGameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasGameManager.swift; sourceTree = "<group>"; };
 		E786F02C2894833400171591 /* AliasWordCategories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AliasWordCategories.json; sourceTree = "<group>"; };
 		E786F02E2894836D00171591 /* AliasDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasDataManager.swift; sourceTree = "<group>"; };
+		B506E11E289471E000C3ADE8 /* AliasSoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasSoundManager.swift; sourceTree = "<group>"; };
+		B506E1252894813C00C3ADE8 /* correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correct.mp3; sourceTree = "<group>"; };
+		B506E1262894813C00C3ADE8 /* skip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = skip.mp3; sourceTree = "<group>"; };
 		E79A610428903883007E9C00 /* Alias.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alias.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79A610728903883007E9C00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E79A610928903883007E9C00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +65,7 @@
 				B506E103289272DA00C3ADE8 /* AliasWordsPack.swift */,
 				B506E1062892765300C3ADE8 /* AliasGameManager.swift */,
 				E786F02E2894836D00171591 /* AliasDataManager.swift */,
+				B506E11E289471E000C3ADE8 /* AliasSoundManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -69,6 +76,15 @@
 				E786F02C2894833400171591 /* AliasWordCategories.json */,
 			);
 			path = Resources;
+      sourceTree = "<group>";
+		};
+		B506E1202894720F00C3ADE8 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				B506E1252894813C00C3ADE8 /* correct.mp3 */,
+				B506E1262894813C00C3ADE8 /* skip.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		E79A60FB28903883007E9C00 = {
@@ -124,6 +140,7 @@
 		E79A611E289038D2007E9C00 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				B506E1202894720F00C3ADE8 /* Sounds */,
 				E79A610728903883007E9C00 /* AppDelegate.swift */,
 				E79A610928903883007E9C00 /* SceneDelegate.swift */,
 				E79A611528903885007E9C00 /* Info.plist */,
@@ -189,11 +206,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B506E1272894813C00C3ADE8 /* correct.mp3 in Resources */,
 				E79A612028906174007E9C00 /* .gitignore in Resources */,
 				E79A611428903885007E9C00 /* LaunchScreen.storyboard in Resources */,
 				E79A611128903885007E9C00 /* Assets.xcassets in Resources */,
 				E79A610F28903883007E9C00 /* Main.storyboard in Resources */,
 				E786F02D2894833400171591 /* AliasWordCategories.json in Resources */,
+				B506E1282894813C00C3ADE8 /* skip.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +232,7 @@
 				E79A610A28903883007E9C00 /* SceneDelegate.swift in Sources */,
 				B506E104289272DA00C3ADE8 /* AliasWordsPack.swift in Sources */,
 				E7A82C7F2892FA900061AF48 /* WordCategoriesTableViewController.swift in Sources */,
+				B506E11F289471E000C3ADE8 /* AliasSoundManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +388,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -397,6 +418,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
