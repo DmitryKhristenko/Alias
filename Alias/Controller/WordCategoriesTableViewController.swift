@@ -9,7 +9,7 @@ import UIKit
 
 class WordCategoriesTableViewController: UITableViewController {
     
-    let aliasWordsPack = AliasWordsPack.getAliasWordsCategories()
+    let aliasWordsPack = AliasDataManager.shared.getAliasWordsCategories()
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
