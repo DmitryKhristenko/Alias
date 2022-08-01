@@ -24,7 +24,7 @@
 /* Begin PBXFileReference section */
 		0A2ECBB12892C35B0025DAD4 /* AliasGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasGameViewController.swift; sourceTree = "<group>"; };
 		0A2ECBB32892C3970025DAD4 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
-		62C2289F289527EA00EEAD06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62C2289F289527EA00EEAD06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = SupportingFiles/Assets.xcassets; sourceTree = "<group>"; };
 		B506E103289272DA00C3ADE8 /* AliasWordsPack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasWordsPack.swift; sourceTree = "<group>"; };
 		B506E1062892765300C3ADE8 /* AliasGameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasGameManager.swift; sourceTree = "<group>"; };
 		E79A610428903883007E9C00 /* Alias.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alias.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +78,7 @@
 		E79A610628903883007E9C00 /* Alias */ = {
 			isa = PBXGroup;
 			children = (
+				62C2289F289527EA00EEAD06 /* Assets.xcassets */,
 				B506E105289272EB00C3ADE8 /* Model */,
 				E79A611B289038B2007E9C00 /* View */,
 				E79A611C289038B9007E9C00 /* Controller */,
@@ -112,7 +113,6 @@
 				E79A610728903883007E9C00 /* AppDelegate.swift */,
 				E79A610928903883007E9C00 /* SceneDelegate.swift */,
 				E79A611528903885007E9C00 /* Info.plist */,
-				62C2289F289527EA00EEAD06 /* Assets.xcassets */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";

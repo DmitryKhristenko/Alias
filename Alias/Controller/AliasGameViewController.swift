@@ -20,16 +20,27 @@ class AliasGameViewController: UIViewController {
     private var totalTime = 60
     private var secondsPassed = 0
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        correctButton.setTitle("Начать игру", for: .normal)
+        
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        secondsPassed = 0
+        let font = UIFont(name: "Marker Felt", size: 35) ?? .systemFont(ofSize: 35)
+        let attributedText: NSAttributedString? = .init(string: "Начать игру",
+                                                        attributes: [.font: font,
+                                                                     .foregroundColor: UIColor.green])
+        correctButton.setAttributedTitle(attributedText, for: .normal)
+        timerLabel.text = String(totalTime - secondsPassed)
     }
     
     @IBAction func correctButtonPressed() {
         if correctButton.titleLabel?.text == "Начать игру" {
             timer = Timer.scheduledTimer(timeInterval: 1.0, target:self, selector: #selector(updateTimer), userInfo:nil, repeats: true)
         }
-        correctButton.setTitle("Правильно", for: .normal)
+        let font = UIFont(name: "Marker Felt", size: 35) ?? .systemFont(ofSize: 35)
+        let attributedText: NSAttributedString? = .init(string: "Правильно",
+                                                        attributes: [.font: font,
+                                                                     .foregroundColor: UIColor.green])
+        correctButton.setAttributedTitle(attributedText, for: .normal)
         aliasGameManager.scoreUp()
         updateUI()
     }
@@ -40,8 +51,7 @@ class AliasGameViewController: UIViewController {
     }
     
     @IBAction func resetButtonPressed() {
-        
-
+       
     }
     
     private func updateUI() {
@@ -59,6 +69,4 @@ class AliasGameViewController: UIViewController {
         }
     }
     
-    
-    
-    }
+}
