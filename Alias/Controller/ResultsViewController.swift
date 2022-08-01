@@ -17,9 +17,10 @@ class ResultsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
     }
     
     @IBAction func resetButtonPressed() {
-        
+        navigationController?.popToRootViewController(animated: true)
     }
 }

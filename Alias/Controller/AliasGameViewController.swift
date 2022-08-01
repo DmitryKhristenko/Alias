@@ -18,6 +18,11 @@ class AliasGameViewController: UIViewController {
     private var totalTime = 60
     private var secondsPassed = 0
     
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationItem.hidesBackButton = true
+    }
         
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -52,6 +57,7 @@ class AliasGameViewController: UIViewController {
     }
     
     @IBAction func resetButtonPressed() {
+        navigationController?.popToRootViewController(animated: true)
     }
     
     private func updateUI() {
