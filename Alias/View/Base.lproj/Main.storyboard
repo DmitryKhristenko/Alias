@@ -52,6 +52,7 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Играть" cornerStyle="large">
                                             <backgroundConfiguration key="background">
                                                 <color key="backgroundColor" red="0.49019607840000001" green="0.80784313730000001" blue="0.074509803920000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                                             <color key="baseForegroundColor" red="0.31738562790000002" green="0.196078639" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -71,6 +72,7 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Правила" cornerStyle="large">
                                             <backgroundConfiguration key="background">
                                                 <color key="backgroundColor" red="0.79215686269999996" green="0.58431372550000005" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                                             <color key="baseForegroundColor" red="0.31764705879999999" green="0.1960784314" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -189,6 +191,7 @@
                                         <buttonConfiguration key="configuration" style="plain" title="В начало" cornerStyle="large">
                                             <backgroundConfiguration key="background">
                                                 <color key="backgroundColor" red="0.792156862745098" green="0.58431372549019611" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                                             <color key="baseForegroundColor" red="0.31764705882352939" green="0.19607843137254902" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -208,6 +211,7 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Пропустить" cornerStyle="large">
                                             <backgroundConfiguration key="background">
                                                 <color key="backgroundColor" red="1" green="0.5607843137254902" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                                             <color key="baseForegroundColor" red="0.31764705882352939" green="0.19607843137254902" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -227,6 +231,7 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Правильно" cornerStyle="large">
                                             <backgroundConfiguration key="background">
                                                 <color key="backgroundColor" red="0.49019607843137253" green="0.80784313725490198" blue="0.074509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                                             <color key="baseForegroundColor" red="0.31738562788341906" green="0.19607863900257225" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -348,6 +353,7 @@
                                         <buttonConfiguration key="configuration" style="plain" title="В начало" cornerStyle="large">
                                             <backgroundConfiguration key="background">
                                                 <color key="backgroundColor" red="0.792156862745098" green="0.58431372549019611" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                                             <color key="baseForegroundColor" red="0.31764705882352939" green="0.19607843137254902" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -367,6 +373,7 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Продолжить игру" cornerStyle="large">
                                             <backgroundConfiguration key="background">
                                                 <color key="backgroundColor" red="0.49019607840000001" green="0.80784313730000001" blue="0.074509803920000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                                             <color key="baseForegroundColor" red="0.31764705879999999" green="0.1960784314" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -415,7 +422,7 @@
                                 <rect key="frame" x="0.0" y="108" width="400" height="647"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e71-eR-URw">
-                                        <rect key="frame" x="0.0" y="0.0" width="400" height="1200"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="1400"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alias: Скажи иначе" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQs-u7-XR2">
                                                 <rect key="frame" x="20" y="5" width="360" height="21"/>
@@ -515,7 +522,7 @@
                                             <constraint firstAttribute="trailing" secondItem="L5T-Rp-HKI" secondAttribute="trailing" constant="20" id="aV0-M0-THG"/>
                                             <constraint firstItem="RMe-Oc-H9g" firstAttribute="top" secondItem="yCo-7y-mVc" secondAttribute="bottom" constant="20" id="d0c-sY-8eS"/>
                                             <constraint firstItem="SPb-Pl-yet" firstAttribute="leading" secondItem="e71-eR-URw" secondAttribute="leading" constant="20" id="g1f-dw-1DS"/>
-                                            <constraint firstAttribute="height" constant="1200" id="h1T-N1-HWW"/>
+                                            <constraint firstAttribute="height" constant="1400" id="h1T-N1-HWW"/>
                                             <constraint firstAttribute="trailing" secondItem="zmW-Mf-mAx" secondAttribute="trailing" constant="20" id="knI-2m-8fe"/>
                                             <constraint firstItem="DGp-lI-Chm" firstAttribute="top" secondItem="L5T-Rp-HKI" secondAttribute="bottom" constant="10" id="l43-xF-Ycx"/>
                                             <constraint firstAttribute="trailing" secondItem="DGp-lI-Chm" secondAttribute="trailing" constant="20" id="nFo-X9-xei"/>
@@ -549,6 +556,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Назад" cornerStyle="large">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" red="0.79215686269999996" green="0.58431372550000005" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                     <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                                     <color key="baseForegroundColor" red="0.31764705879999999" green="0.1960784314" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
