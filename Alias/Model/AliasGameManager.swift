@@ -10,7 +10,13 @@ struct AliasGameManager {
         case action = "ДЕЙСТВИЕ"
     }
     
-    var score = 0
+    var score = 0 {
+        didSet {
+            if score < 0 {
+                score = 0
+            }
+        }
+    }
     
     private var currentRound = 1
     private var wordIndex = 0
