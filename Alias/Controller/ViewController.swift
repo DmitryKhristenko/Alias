@@ -9,8 +9,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let joke = JokeManager()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

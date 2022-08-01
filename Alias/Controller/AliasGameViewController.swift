@@ -15,7 +15,7 @@ class AliasGameViewController: UIViewController {
     
     var aliasGameManager: AliasGameManager!
     private var timer = Timer()
-    private var totalTime = 60
+    private var totalTime = 6
     private var secondsPassed = 0
     
 
