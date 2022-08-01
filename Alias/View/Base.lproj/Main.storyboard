@@ -284,18 +284,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Панчлайн" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNI-CP-1KJ">
-                                <rect key="frame" x="20" y="204.5" width="374" height="27.5"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Предисловие к шутке" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zw3-LT-vR8">
-                                <rect key="frame" x="20" y="160" width="374" height="32.5"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NRA-ra-WQP">
+                                <rect key="frame" x="0.0" y="140" width="414" height="92"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Предисловие к шутке" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zw3-LT-vR8">
+                                        <rect key="frame" x="20" y="6" width="374" height="32.5"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Панчлайн" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNI-CP-1KJ">
+                                        <rect key="frame" x="20" y="44.5" width="374" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.65476781129999995" green="0.8452416062" blue="0.85222816469999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="zw3-LT-vR8" firstAttribute="leading" secondItem="NRA-ra-WQP" secondAttribute="leading" constant="20" id="06L-8U-jhY"/>
+                                    <constraint firstAttribute="bottom" secondItem="qNI-CP-1KJ" secondAttribute="bottom" constant="20" id="Onz-jz-d2k"/>
+                                    <constraint firstItem="qNI-CP-1KJ" firstAttribute="leading" secondItem="NRA-ra-WQP" secondAttribute="leading" constant="20" id="Vaw-0u-2lI"/>
+                                    <constraint firstAttribute="trailing" secondItem="qNI-CP-1KJ" secondAttribute="trailing" constant="20" id="cOC-bI-Jbh"/>
+                                    <constraint firstAttribute="trailing" secondItem="zw3-LT-vR8" secondAttribute="trailing" constant="20" id="f31-Co-BOK"/>
+                                    <constraint firstItem="qNI-CP-1KJ" firstAttribute="top" secondItem="zw3-LT-vR8" secondAttribute="bottom" constant="6" id="ghG-ow-c6a"/>
+                                    <constraint firstItem="zw3-LT-vR8" firstAttribute="top" secondItem="NRA-ra-WQP" secondAttribute="top" constant="6" id="lqt-dS-tLA"/>
+                                </constraints>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="B4Z-dO-mA8">
                                 <rect key="frame" x="104" y="398.5" width="206" height="99"/>
                                 <subviews>
@@ -366,16 +381,13 @@
                         <viewLayoutGuide key="safeArea" id="qDO-yY-fAn"/>
                         <color key="backgroundColor" red="0.65476781129999995" green="0.8452416062" blue="0.85222816469999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="zw3-LT-vR8" firstAttribute="leading" secondItem="qDO-yY-fAn" secondAttribute="leading" constant="20" id="BWh-zQ-GNV"/>
-                            <constraint firstItem="qNI-CP-1KJ" firstAttribute="leading" secondItem="qDO-yY-fAn" secondAttribute="leading" constant="20" id="Epe-Su-eDb"/>
                             <constraint firstItem="B4Z-dO-mA8" firstAttribute="centerY" secondItem="bhg-4t-MIY" secondAttribute="centerY" id="Heo-oa-qsP"/>
                             <constraint firstItem="B4Z-dO-mA8" firstAttribute="centerX" secondItem="bhg-4t-MIY" secondAttribute="centerX" id="LB8-eq-6bg"/>
-                            <constraint firstItem="qDO-yY-fAn" firstAttribute="trailing" secondItem="zw3-LT-vR8" secondAttribute="trailing" constant="20" id="NrP-z9-Fk1"/>
-                            <constraint firstItem="zw3-LT-vR8" firstAttribute="top" secondItem="qDO-yY-fAn" secondAttribute="top" constant="20" id="V5O-7z-ted"/>
+                            <constraint firstItem="NRA-ra-WQP" firstAttribute="top" secondItem="qDO-yY-fAn" secondAttribute="top" id="LhM-Gh-Urf"/>
+                            <constraint firstItem="NRA-ra-WQP" firstAttribute="trailing" secondItem="qDO-yY-fAn" secondAttribute="trailing" id="WuC-Od-mIW"/>
                             <constraint firstItem="qDO-yY-fAn" firstAttribute="trailing" secondItem="vhY-1Z-3bt" secondAttribute="trailing" constant="20" id="XgN-oB-FZl"/>
                             <constraint firstItem="vhY-1Z-3bt" firstAttribute="leading" secondItem="qDO-yY-fAn" secondAttribute="leading" constant="20" id="Yah-JD-QCP"/>
-                            <constraint firstItem="qDO-yY-fAn" firstAttribute="trailing" secondItem="qNI-CP-1KJ" secondAttribute="trailing" constant="20" id="hcO-dB-yeb"/>
-                            <constraint firstItem="qNI-CP-1KJ" firstAttribute="top" secondItem="zw3-LT-vR8" secondAttribute="bottom" constant="12" id="ir6-ky-Hbn"/>
+                            <constraint firstItem="NRA-ra-WQP" firstAttribute="leading" secondItem="qDO-yY-fAn" secondAttribute="leading" id="kaj-hB-Fxv"/>
                             <constraint firstItem="qDO-yY-fAn" firstAttribute="bottom" secondItem="vhY-1Z-3bt" secondAttribute="bottom" constant="20" id="nUZ-zq-RF3"/>
                         </constraints>
                     </view>
@@ -383,6 +395,7 @@
                     <connections>
                         <outlet property="jokePunchlineLabel" destination="qNI-CP-1KJ" id="bfS-jz-GuR"/>
                         <outlet property="jokeSetupLabel" destination="zw3-LT-vR8" id="bo1-ue-A72"/>
+                        <outlet property="jokeView" destination="NRA-ra-WQP" id="sl4-Q4-yEf"/>
                         <outlet property="scoreLabel" destination="VT4-zN-GXA" id="TT5-uq-QGW"/>
                     </connections>
                 </viewController>
