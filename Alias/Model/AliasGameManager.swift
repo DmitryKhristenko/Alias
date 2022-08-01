@@ -41,6 +41,7 @@ struct AliasGameManager {
     
     mutating func nextRound() {
         currentRound += 1
+        score = 0
     }
     
     mutating func scoreUp() {

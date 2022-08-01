@@ -22,6 +22,8 @@ class ResultsViewController: UIViewController {
             self.jokeSetupLabel.text = joke.setup
             self.jokePunchlineLabel.text = joke.punchline
         }
+        
+        scoreLabel.text = String(aliasGameManager.score)
     }
     
     @IBAction func resetButtonPressed() {
