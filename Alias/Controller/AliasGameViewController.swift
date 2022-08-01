@@ -87,6 +87,11 @@ class AliasGameViewController: UIViewController {
                                                         attributes: [.font: font,
                                                                      .foregroundColor: UIColor(hue: 2.98, saturation: 0.39, brightness: 0.32, alpha: 1)])
         correctButton.setAttributedTitle(attributedText, for: .normal)
+        
+        let attributedText2: NSAttributedString? = .init(string: string,
+                                                        attributes: [.font: font,
+                                                                     .foregroundColor: UIColor(hue: 2.98, saturation: 0.39, brightness: 0.32, alpha: 0.7)])
+        correctButton.setAttributedTitle(attributedText2, for: .highlighted)
     }
     
     @objc func updateTimer() {
