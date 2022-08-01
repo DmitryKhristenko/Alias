@@ -22,14 +22,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="NBn-fm-I2I" secondAttribute="bottom" id="3fU-T4-eaZ"/>
-                            <constraint firstItem="NBn-fm-I2I" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="6eJ-m5-TfW"/>
-                            <constraint firstItem="NBn-fm-I2I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Aa6-G0-Z5W"/>
-                            <constraint firstAttribute="trailing" secondItem="NBn-fm-I2I" secondAttribute="trailing" id="Ene-sz-sJK"/>
-                            <constraint firstItem="NBn-fm-I2I" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GMF-Vd-JRh"/>
-                            <constraint firstItem="NBn-fm-I2I" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="MqX-Ex-KOc"/>
-                            <constraint firstItem="NBn-fm-I2I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TW6-QQ-kEW"/>
-                            <constraint firstAttribute="bottom" secondItem="NBn-fm-I2I" secondAttribute="bottom" id="gWr-M8-b4N"/>
+                            <constraint firstItem="NBn-fm-I2I" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="C0e-1p-LFc"/>
+                            <constraint firstItem="NBn-fm-I2I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Wc0-0Q-usK"/>
+                            <constraint firstAttribute="bottom" secondItem="NBn-fm-I2I" secondAttribute="bottom" id="cyO-Pg-pBL"/>
+                            <constraint firstItem="NBn-fm-I2I" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="zB9-K9-oq0"/>
                         </constraints>
                     </view>
                 </viewController>
