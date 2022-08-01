@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A2ECBE02892FE160025DAD4 /* JokeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2ECBDF2892FE160025DAD4 /* JokeManager.swift */; };
+		0A2ECBE22892FE390025DAD4 /* JokeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2ECBE12892FE390025DAD4 /* JokeData.swift */; };
 		0A2ECBB22892C35B0025DAD4 /* AliasGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2ECBB12892C35B0025DAD4 /* AliasGameViewController.swift */; };
 		0A2ECBB42892C3970025DAD4 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2ECBB32892C3970025DAD4 /* ResultsViewController.swift */; };
 		62C228A0289527EA00EEAD06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62C2289F289527EA00EEAD06 /* Assets.xcassets */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A2ECBDF2892FE160025DAD4 /* JokeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeManager.swift; sourceTree = "<group>"; };
+		0A2ECBE12892FE390025DAD4 /* JokeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeData.swift; sourceTree = "<group>"; };
 		0A2ECBB12892C35B0025DAD4 /* AliasGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasGameViewController.swift; sourceTree = "<group>"; };
 		0A2ECBB32892C3970025DAD4 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		62C2289F289527EA00EEAD06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = SupportingFiles/Assets.xcassets; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 			children = (
 				B506E103289272DA00C3ADE8 /* AliasWordsPack.swift */,
 				B506E1062892765300C3ADE8 /* AliasGameManager.swift */,
+				0A2ECBDF2892FE160025DAD4 /* JokeManager.swift */,
+				0A2ECBE12892FE390025DAD4 /* JokeData.swift */,
 				E786F02E2894836D00171591 /* AliasDataManager.swift */,
 				B506E11E289471E000C3ADE8 /* AliasSoundManager.swift */,
 			);
@@ -222,7 +228,9 @@
 				0A2ECBB42892C3970025DAD4 /* ResultsViewController.swift in Sources */,
 				E79A610828903883007E9C00 /* AppDelegate.swift in Sources */,
 				E79A610A28903883007E9C00 /* SceneDelegate.swift in Sources */,
+				0A2ECBE02892FE160025DAD4 /* JokeManager.swift in Sources */,
 				B506E104289272DA00C3ADE8 /* AliasWordsPack.swift in Sources */,
+				0A2ECBE22892FE390025DAD4 /* JokeData.swift in Sources */,
 				E7A82C7F2892FA900061AF48 /* WordCategoriesTableViewController.swift in Sources */,
 				B506E11F289471E000C3ADE8 /* AliasSoundManager.swift in Sources */,
 			);
