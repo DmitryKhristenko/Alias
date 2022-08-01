@@ -18,6 +18,7 @@ class ResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
+        
         JokeManager.shared.fetchJoke { joke in
             self.jokeSetupLabel.text = joke.setup
             self.jokePunchlineLabel.text = joke.punchline

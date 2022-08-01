@@ -10,6 +10,8 @@ struct AliasGameManager {
         case action = "ДЕЙСТВИЕ"
     }
     
+    var isOn = false
+    
     var score: String {
         return String(currentScore)
     }
@@ -26,17 +28,22 @@ struct AliasGameManager {
         }
     }
     
-    private var startPhrase = """
+    private let startPhrase = """
         Нажми
         "Начать игру"
         когда будешь готов
     """
     
-    private var currentRound = 1
+    private var currentRound = 0 {
+        didSet {
+            if currentRound % 4 == 0 {
+                words.shuffle()
+                print("Shuffled")
+            }
+        }
+    }
+    
     private var wordIndex = 0
-    
-    var isOn = false
-    
     private var words: [String]
     
     mutating func getWord() -> String {
@@ -48,10 +55,6 @@ struct AliasGameManager {
             if wordIndex == words.count - 1 {
                 words.shuffle()
                 wordIndex = 0
-            }
-            
-            if currentRound % 4 == 0 {
-                words.shuffle()
             }
         }
         
