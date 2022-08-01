@@ -266,6 +266,7 @@
                     <connections>
                         <outlet property="correctButton" destination="UHV-EF-KNj" id="QHC-eE-KhM"/>
                         <outlet property="scoreLabel" destination="2Yo-I4-flC" id="qbN-my-Zki"/>
+                        <outlet property="skipButton" destination="ar6-yV-fhm" id="qp5-BM-lrI"/>
                         <outlet property="timerLabel" destination="MvR-X0-8A5" id="iaX-c3-VN0"/>
                         <outlet property="wordsLabel" destination="XXB-5w-KUR" id="AQu-eT-BSy"/>
                         <segue destination="W5M-DB-Wfa" kind="show" identifier="showResults" id="raf-JL-Kt6"/>

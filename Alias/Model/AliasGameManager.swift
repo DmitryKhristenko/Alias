@@ -26,22 +26,33 @@ struct AliasGameManager {
         }
     }
     
+    private var startPhrase = """
+        Нажми
+        "Начать игру"
+        когда будешь готов
+    """
+    
     private var currentRound = 1
     private var wordIndex = 0
+    
+    var isOn = false
     
     private var words: [String]
     
     mutating func getWord() -> String {
+        var word = startPhrase
         
-        let word = words[wordIndex]
-        
-        if wordIndex == words.count - 1 {
-            words.shuffle()
-            wordIndex = 0
-        }
-        
-        if currentRound % 4 == 0 {
-            words.shuffle()
+        if isOn {
+            word = words[wordIndex]
+            
+            if wordIndex == words.count - 1 {
+                words.shuffle()
+                wordIndex = 0
+            }
+            
+            if currentRound % 4 == 0 {
+                words.shuffle()
+            }
         }
         
         return word
