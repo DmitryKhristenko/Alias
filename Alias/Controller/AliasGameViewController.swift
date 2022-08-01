@@ -30,7 +30,7 @@ class AliasGameViewController: UIViewController {
         let font = UIFont(name: "Marker Felt", size: 35) ?? .systemFont(ofSize: 35)
         let attributedText: NSAttributedString? = .init(string: "Начать игру",
                                                         attributes: [.font: font,
-                                                                     .foregroundColor: UIColor.green])
+                                                                     .foregroundColor: UIColor(hue: 2.98, saturation: 0.39, brightness: 0.32, alpha: 1)])
         correctButton.setAttributedTitle(attributedText, for: .normal)
         title = "Alias Раунд # \(aliasGameManager.round)"
 
@@ -54,7 +54,7 @@ class AliasGameViewController: UIViewController {
         let font = UIFont(name: "Marker Felt", size: 35) ?? .systemFont(ofSize: 35)
         let attributedText: NSAttributedString? = .init(string: "Правильно",
                                                         attributes: [.font: font,
-                                                                     .foregroundColor: UIColor.green])
+                                                                     .foregroundColor: UIColor(hue: 2.98, saturation: 0.39, brightness: 0.32, alpha: 1)])
         correctButton.setAttributedTitle(attributedText, for: .normal)
         SoundManager.shared.playSound(for: .correct)
         aliasGameManager.scoreUp()

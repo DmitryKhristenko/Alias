@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cg2-at-fLd">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -8,89 +8,97 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Alias-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Alias" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M5f-pN-3lz">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.65476781129999995" green="0.84564615292" blue="0.85222816469999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4Fv-dq-XeF">
-                                <rect key="frame" x="20" y="318" width="280" height="120"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4a-fd-AzL">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="52.5"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="New game"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Играть" cornerStyle="large">
-                                            <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="35"/>
-                                            <color key="baseForegroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="AJa-vF-rGZ" kind="show" id="ZMH-vJ-Zk6"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sdd-WB-7ah">
-                                        <rect key="frame" x="0.0" y="67.5" width="280" height="52.5"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="New game"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Правила" cornerStyle="large">
-                                            <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="35"/>
-                                            <color key="baseForegroundColor" systemColor="systemBlueColor"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="BDO-9e-9dX" kind="presentation" id="Di1-v8-c4B"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="-15" translatesAutoresizingMaskIntoConstraints="NO" id="Qrz-Ss-29y" userLabel="Stack View  Title">
-                                <rect key="frame" x="33" y="78" width="254.5" height="152.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Qrz-Ss-29y" userLabel="Stack View  Title">
+                                <rect key="frame" x="20" y="160" width="374" height="260"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alias" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZIg-BS-HZw">
-                                        <rect key="frame" x="5" y="0.0" width="244" height="114.5"/>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="93"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="195"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="150"/>
                                         <color key="textColor" systemColor="systemIndigoColor"/>
                                         <color key="highlightedColor" systemColor="labelColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="СКАЖИ  ИНАЧЕ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgN-9Z-GRH">
-                                        <rect key="frame" x="0.0" y="99.5" width="254.5" height="53"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="33"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="СКАЖИ  ИНАЧЕ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BgN-9Z-GRH">
+                                        <rect key="frame" x="0.0" y="195" width="374" height="65"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="50"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4Fv-dq-XeF">
+                                <rect key="frame" x="20" y="647" width="374" height="115"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sN-QK-A8r">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="eAg-jJ-sIv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Правильно"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Играть" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.49019607840000001" green="0.80784313730000001" blue="0.074509803920000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                            <color key="baseForegroundColor" red="0.31738562790000002" green="0.196078639" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="AJa-vF-rGZ" kind="show" id="fmo-rh-2rI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50O-TX-1GR">
+                                        <rect key="frame" x="0.0" y="75" width="374" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="sAy-Tc-fQG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Сбросить"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Правила" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.79215686269999996" green="0.58431372550000005" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                            <color key="baseForegroundColor" red="0.31764705879999999" green="0.1960784314" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="BDO-9e-9dX" kind="presentation" id="uJc-MR-3I4"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Qrz-Ss-29y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7LS-CP-3du"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qrz-Ss-29y" secondAttribute="trailing" constant="20" id="65d-il-WKa"/>
                             <constraint firstItem="M5f-pN-3lz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EU2-8h-DmA"/>
+                            <constraint firstItem="4Fv-dq-XeF" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Qrz-Ss-29y" secondAttribute="bottom" constant="40" id="EdR-cs-LTe"/>
+                            <constraint firstItem="Qrz-Ss-29y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="GAX-Jh-j5W"/>
                             <constraint firstItem="M5f-pN-3lz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dYk-jp-JBz"/>
-                            <constraint firstItem="4Fv-dq-XeF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dwJ-x4-AFz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4Fv-dq-XeF" secondAttribute="bottom" constant="100" id="eEr-CH-m87"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Fv-dq-XeF" secondAttribute="trailing" constant="20" id="eXu-Nr-jto"/>
-                            <constraint firstAttribute="bottom" secondItem="4Fv-dq-XeF" secondAttribute="bottom" constant="130" id="np0-FK-xA1"/>
-                            <constraint firstItem="Qrz-Ss-29y" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-130" id="nyi-IA-FWW"/>
+                            <constraint firstItem="Qrz-Ss-29y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="kMt-hR-pxV"/>
                             <constraint firstItem="4Fv-dq-XeF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="upE-7w-fAY"/>
                             <constraint firstItem="M5f-pN-3lz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yeE-Jt-4Re"/>
                             <constraint firstAttribute="bottom" secondItem="M5f-pN-3lz" secondAttribute="bottom" id="zh4-2i-gYR"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Alias" id="brx-pG-0sX">
+                    <navigationItem key="navigationItem" id="brx-pG-0sX">
                         <barButtonItem key="backBarButtonItem" title="Назад" id="ghq-JP-EyD"/>
                     </navigationItem>
                 </viewController>
@@ -103,23 +111,23 @@
             <objects>
                 <viewController id="wB4-QZ-DF3" customClass="AliasGameViewController" customModule="Alias" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oIE-aZ-wqs">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dOc-ae-1Yc">
-                                <rect key="frame" x="20" y="97" width="280" height="84.5"/>
+                                <rect key="frame" x="20" y="146" width="374" height="63"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gfS-Oe-yEI">
-                                        <rect key="frame" x="0.0" y="0.0" width="135" height="84.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="182" height="63"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Секунд осталось" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W77-WT-FHT">
-                                                <rect key="frame" x="0.0" y="4" width="135" height="43.5"/>
+                                                <rect key="frame" x="0.0" y="4" width="182" height="22"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MvR-X0-8A5">
-                                                <rect key="frame" x="0.0" y="47.5" width="135" height="33"/>
+                                                <rect key="frame" x="0.0" y="26" width="182" height="33"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                                                 <color key="textColor" systemColor="systemRedColor"/>
                                                 <nil key="highlightedColor"/>
@@ -134,16 +142,16 @@
                                         </userDefinedRuntimeAttributes>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MuY-jt-B2p">
-                                        <rect key="frame" x="145" y="0.0" width="135" height="84.5"/>
+                                        <rect key="frame" x="192" y="0.0" width="182" height="63"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Количество очков" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSP-m5-tOW">
-                                                <rect key="frame" x="0.0" y="4" width="135" height="43.5"/>
+                                                <rect key="frame" x="0.0" y="4" width="182" height="22"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Yo-I4-flC">
-                                                <rect key="frame" x="0.0" y="47.5" width="135" height="33"/>
+                                                <rect key="frame" x="0.0" y="26" width="182" height="33"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -160,7 +168,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="XXB-5w-KUR">
-                                <rect key="frame" x="50" y="242" width="220" height="84"/>
+                                <rect key="frame" x="50" y="388" width="314" height="120"/>
                                 <string key="text">Нажми
 "Начать игру"   когда будешь готов</string>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="55"/>
@@ -168,10 +176,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fbM-u4-DFu">
-                                <rect key="frame" x="20" y="378" width="280" height="170"/>
+                                <rect key="frame" x="20" y="672" width="374" height="170"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWS-ge-FdU">
-                                        <rect key="frame" x="5" y="0.0" width="270" height="40"/>
+                                        <rect key="frame" x="5" y="0.0" width="364" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="rHO-Sq-Mza"/>
                                         </constraints>
@@ -190,7 +198,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ar6-yV-fhm">
-                                        <rect key="frame" x="5" y="50" width="270" height="50"/>
+                                        <rect key="frame" x="5" y="50" width="364" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Nid-yj-Jlr"/>
                                         </constraints>
@@ -209,7 +217,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHV-EF-KNj">
-                                        <rect key="frame" x="5" y="110" width="270" height="60"/>
+                                        <rect key="frame" x="5" y="110" width="364" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="eDl-uE-CBS"/>
                                         </constraints>
@@ -221,7 +229,7 @@
                                                 <color key="backgroundColor" red="0.49019607843137253" green="0.80784313725490198" blue="0.074509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </backgroundConfiguration>
                                             <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
-                                            <color key="baseForegroundColor" red="0.31764705882352939" green="0.19607843137254902" blue="0.32156862745098036" alpha="0.69968439569536434" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="baseForegroundColor" red="0.31738562788341906" green="0.19607863900257225" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="correctButtonPressed" destination="wB4-QZ-DF3" eventType="touchUpInside" id="F7u-XK-968"/>
@@ -239,7 +247,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ILn-4D-Hmd"/>
-                        <color key="backgroundColor" red="0.65585821870000005" green="0.84478938579999996" blue="0.84968334440000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.65476781129999995" green="0.8452416062" blue="0.85222816469999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ILn-4D-Hmd" firstAttribute="trailing" secondItem="fbM-u4-DFu" secondAttribute="trailing" constant="20" id="7nN-Nf-VTe"/>
                             <constraint firstAttribute="trailing" secondItem="dOc-ae-1Yc" secondAttribute="trailing" constant="20" id="Dag-h6-fd4"/>
@@ -272,23 +280,23 @@
             <objects>
                 <viewController id="W5M-DB-Wfa" customClass="ResultsViewController" customModule="Alias" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bhg-4t-MIY">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Панчлайн" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNI-CP-1KJ">
-                                <rect key="frame" x="20" y="149" width="280" height="22"/>
+                                <rect key="frame" x="20" y="198" width="374" height="22"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Предисловие к шутке" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zw3-LT-vR8">
-                                <rect key="frame" x="20" y="111" width="280" height="26"/>
+                                <rect key="frame" x="20" y="160" width="374" height="26"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="B4Z-dO-mA8">
-                                <rect key="frame" x="57" y="234.5" width="206" height="99"/>
+                                <rect key="frame" x="104" y="398.5" width="206" height="99"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваш результат:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3kF-kV-vfR">
                                         <rect key="frame" x="17.5" y="10" width="171.5" height="27.5"/>
@@ -312,10 +320,10 @@
                                 </userDefinedRuntimeAttributes>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vhY-1Z-3bt">
-                                <rect key="frame" x="20" y="430" width="280" height="118"/>
+                                <rect key="frame" x="20" y="724" width="374" height="118"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbu-gk-brO">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="nSR-W6-QY3"/>
                                         </constraints>
@@ -333,7 +341,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwD-e3-y3s">
-                                        <rect key="frame" x="0.0" y="58" width="280" height="60"/>
+                                        <rect key="frame" x="0.0" y="58" width="374" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="X3e-LM-ABS"/>
                                         </constraints>
@@ -345,7 +353,7 @@
                                                 <color key="backgroundColor" red="0.49019607840000001" green="0.80784313730000001" blue="0.074509803920000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </backgroundConfiguration>
                                             <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
-                                            <color key="baseForegroundColor" red="0.31764705879999999" green="0.1960784314" blue="0.32156862749999998" alpha="0.69968439569999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="baseForegroundColor" red="0.31764705879999999" green="0.1960784314" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="continueButtonPressed" destination="W5M-DB-Wfa" eventType="touchUpInside" id="vcF-QO-kzO"/>
@@ -355,7 +363,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qDO-yY-fAn"/>
-                        <color key="backgroundColor" red="0.69860762357711792" green="0.8622933030128479" blue="0.87059944868087769" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.65476781129999995" green="0.8452416062" blue="0.85222816469999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zw3-LT-vR8" firstAttribute="leading" secondItem="qDO-yY-fAn" secondAttribute="leading" constant="20" id="BWh-zQ-GNV"/>
                             <constraint firstItem="qNI-CP-1KJ" firstAttribute="leading" secondItem="qDO-yY-fAn" secondAttribute="leading" constant="20" id="Epe-Su-eDb"/>
@@ -386,105 +394,90 @@
             <objects>
                 <viewController id="A9t-MI-qT2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y2n-Hy-qnR">
-                        <rect key="frame" x="0.0" y="0.0" width="315" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="845"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iea-UF-tEO">
-                                <rect key="frame" x="21.5" y="480.5" width="272" height="52.5"/>
-                                <color key="tintColor" systemColor="systemBackgroundColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Вернуться назад" cornerStyle="capsule">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                    </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="35"/>
-                                    <color key="baseForegroundColor" red="0.58039215686274503" green="0.12941176470588234" blue="0.5725490196078431" alpha="0.70012417218543044" colorSpace="custom" customColorSpace="sRGB"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="mq0-Bq-f93" kind="unwind" unwindAction="unwindSegue:" id="PSE-DG-Fmr"/>
-                                </connections>
-                            </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c9W-i5-HTs">
-                                <rect key="frame" x="0.0" y="103" width="315" height="365"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9W-i5-HTs">
+                                <rect key="frame" x="0.0" y="108" width="400" height="637"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e71-eR-URw">
-                                        <rect key="frame" x="0.0" y="0.0" width="315" height="1400"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="1200"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alias: Скажи иначе" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQs-u7-XR2">
-                                                <rect key="frame" x="20" y="5" width="275" height="21"/>
+                                                <rect key="frame" x="20" y="5" width="360" height="21"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfD-27-9gs">
-                                                <rect key="frame" x="20" y="31" width="275" height="233"/>
+                                                <rect key="frame" x="20" y="31" width="360" height="179.5"/>
                                                 <string key="text">В игру играют командами из двух или более человек/ Задача каждого игрока команды - объяснить как можно больше слов отображаемых на экране за ограниченное время другими словами, используя, например синонимы, антонимы и подсказки так, чтобы члены вашей команды смогли отгадать как можно больше слов прежде чем истечет время. чем больше слов отгадала команда, тем больше она заработает баллов.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Объяснение слов" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gfg-uc-4Ly">
-                                                <rect key="frame" x="20" y="274" width="275" height="21"/>
+                                                <rect key="frame" x="20" y="220.5" width="360" height="21"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuK-TG-Gh2">
-                                                <rect key="frame" x="20" y="300" width="275" height="215"/>
+                                                <rect key="frame" x="20" y="246.5" width="360" height="161.5"/>
                                                 <string key="text">При объяснении слов нельзя упоминать какую-либо часть слова. Например, слово "кофеварка" нельзя объяснять как "аппарат для варки кофе". Правильный способ объяснения будет следующий: "аппарат для приготовления крепкого напитка, который обычно пьют за завтраком". Можно использовать синонимы - то есть вы можете сказать "кипятить", но не "варить".</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmW-Mf-mAx">
-                                                <rect key="frame" x="20" y="535" width="275" height="125.5"/>
+                                                <rect key="frame" x="20" y="428" width="360" height="90"/>
                                                 <string key="text">Вы можете использовать антонимы. Слово "большой" может быть объянено как "антоним слова маленький". Вы не можете использовать иностранные языки, за исключением тех случаев, когда все игроки согласились с этим.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPb-Pl-yet">
-                                                <rect key="frame" x="20" y="680.5" width="275" height="197"/>
+                                                <rect key="frame" x="20" y="538" width="360" height="143.5"/>
                                                 <string key="text">Отгаданное слово должно точно совпадать. Объясняющий игрок помогает отгадывающим найти правильную форму слова. Если слово состоит из двух частей и кто-то отгадывающим найти правильную форму слова. Если слово состоит из двух частей и кто-то отгадывает первую часть, вы потом можете использовать эту часть слова в дальнейшем объяснении.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Начисление очков" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJa-Nq-DbQ">
-                                                <rect key="frame" x="20" y="897.5" width="275" height="21"/>
+                                                <rect key="frame" x="20" y="701.5" width="360" height="21"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCo-7y-mVc">
-                                                <rect key="frame" x="20" y="923.5" width="275" height="90"/>
+                                                <rect key="frame" x="20" y="727.5" width="360" height="72"/>
                                                 <string key="text">За каждое отгаданное слово команда получает одно очко, а за пропущенное или отгаданное с нарушением - штрафуется (в зависимости от настроек).</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMe-Oc-H9g">
-                                                <rect key="frame" x="20" y="1033.5" width="275" height="412"/>
+                                                <rect key="frame" x="20" y="819.5" width="360" height="304.5"/>
                                                 <string key="text">Если объясняющий игрок допускает ошибку - например, слово не будет принято и команда потеряет 1 очко. поэтому каждая команда должна внимательно слушать объяснения других команд. Если слово кажется слишком тяжелым, вы можете его пропустить, но помните, что за это вы потеряете очки. Однако, иногда это того стоит, так как вы можете сэкономить время. "Последнее слово для всех" - если включена эта опция, по истечении времени раунда, слово могут отгадывать все команды. В этом случае 1 очко получит команда отгадавшее слово. Победителем считается команда. набравшая необходимое для победы количество очков. Если на момент завершения победного раунда у команд одинаковое количество очков - проводиться дополнительный раунд (Овертайм).</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Задания" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5T-Rp-HKI">
-                                                <rect key="frame" x="20" y="1465.5" width="275" height="21"/>
+                                                <rect key="frame" x="20" y="1144" width="360" height="21"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGp-lI-Chm">
-                                                <rect key="frame" x="20" y="1496.5" width="275" height="197"/>
+                                                <rect key="frame" x="20" y="1175" width="360" height="143.5"/>
                                                 <string key="text">Если в раунде есть задание - команда может получить бонусные балы за его выполнение. Если вам удастся объяснить все слова в соответствии с заданием, то ваша команда получает бонусные очки, но только если другие команды считают ваше выполнение убедительным. Количество бонусных балов определяется случайно в интервале от 7 до 10.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" red="0.65476781129999995" green="0.8452416062" blue="0.85222816469999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="zmW-Mf-mAx" firstAttribute="leading" secondItem="e71-eR-URw" secondAttribute="leading" constant="20" id="2Ay-pm-reO"/>
                                             <constraint firstItem="L5T-Rp-HKI" firstAttribute="top" secondItem="RMe-Oc-H9g" secondAttribute="bottom" constant="20" id="4Te-Ez-4cQ"/>
@@ -508,7 +501,7 @@
                                             <constraint firstAttribute="trailing" secondItem="L5T-Rp-HKI" secondAttribute="trailing" constant="20" id="aV0-M0-THG"/>
                                             <constraint firstItem="RMe-Oc-H9g" firstAttribute="top" secondItem="yCo-7y-mVc" secondAttribute="bottom" constant="20" id="d0c-sY-8eS"/>
                                             <constraint firstItem="SPb-Pl-yet" firstAttribute="leading" secondItem="e71-eR-URw" secondAttribute="leading" constant="20" id="g1f-dw-1DS"/>
-                                            <constraint firstAttribute="height" constant="1400" id="h1T-N1-HWW"/>
+                                            <constraint firstAttribute="height" constant="1200" id="h1T-N1-HWW"/>
                                             <constraint firstAttribute="trailing" secondItem="zmW-Mf-mAx" secondAttribute="trailing" constant="20" id="knI-2m-8fe"/>
                                             <constraint firstItem="DGp-lI-Chm" firstAttribute="top" secondItem="L5T-Rp-HKI" secondAttribute="bottom" constant="10" id="l43-xF-Ycx"/>
                                             <constraint firstAttribute="trailing" secondItem="DGp-lI-Chm" secondAttribute="trailing" constant="20" id="nFo-X9-xei"/>
@@ -523,6 +516,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" red="0.65476781129999995" green="0.8452416062" blue="0.85222816469999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="e71-eR-URw" secondAttribute="bottom" id="71U-q8-384"/>
                                     <constraint firstItem="e71-eR-URw" firstAttribute="leading" secondItem="c9W-i5-HTs" secondAttribute="leading" id="MpK-oP-RtE"/>
@@ -530,45 +524,65 @@
                                     <constraint firstAttribute="trailing" secondItem="e71-eR-URw" secondAttribute="trailing" id="j5M-Zf-EBc"/>
                                 </constraints>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddu-ck-2Rd">
+                                <rect key="frame" x="20" y="765" width="360" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="7Bw-xf-VH2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Сбросить"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Назад" cornerStyle="large">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.79215686269999996" green="0.58431372550000005" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                    <color key="baseForegroundColor" red="0.31764705879999999" green="0.1960784314" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="mq0-Bq-f93" kind="unwind" unwindAction="unwindSegue:" id="4iG-ps-ixG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lhv-oY-lRh"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.65476781129999995" green="0.8452416062" blue="0.85222816469999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="c9W-i5-HTs" firstAttribute="leading" secondItem="lhv-oY-lRh" secondAttribute="leading" id="0I0-MU-GTV"/>
+                            <constraint firstItem="lhv-oY-lRh" firstAttribute="bottom" secondItem="ddu-ck-2Rd" secondAttribute="bottom" constant="20" id="11h-ni-yB3"/>
                             <constraint firstItem="c9W-i5-HTs" firstAttribute="top" secondItem="lhv-oY-lRh" secondAttribute="top" id="2Ra-Rd-MsX"/>
-                            <constraint firstItem="iea-UF-tEO" firstAttribute="centerX" secondItem="y2n-Hy-qnR" secondAttribute="centerX" id="2nT-1A-SK7"/>
-                            <constraint firstItem="lhv-oY-lRh" firstAttribute="bottom" secondItem="iea-UF-tEO" secondAttribute="bottom" constant="15" id="5S8-dU-BIA"/>
+                            <constraint firstAttribute="trailing" secondItem="ddu-ck-2Rd" secondAttribute="trailing" constant="20" id="65z-RE-g7c"/>
                             <constraint firstItem="c9W-i5-HTs" firstAttribute="trailing" secondItem="lhv-oY-lRh" secondAttribute="trailing" id="Zq6-wo-Vbh"/>
                             <constraint firstItem="e71-eR-URw" firstAttribute="width" secondItem="y2n-Hy-qnR" secondAttribute="width" id="Zti-Fx-fN5"/>
-                            <constraint firstItem="c9W-i5-HTs" firstAttribute="bottom" secondItem="lhv-oY-lRh" secondAttribute="bottom" constant="-80" id="sge-sh-lf5"/>
+                            <constraint firstItem="c9W-i5-HTs" firstAttribute="bottom" secondItem="ddu-ck-2Rd" secondAttribute="top" constant="-20" id="sge-sh-lf5"/>
+                            <constraint firstItem="ddu-ck-2Rd" firstAttribute="leading" secondItem="y2n-Hy-qnR" secondAttribute="leading" constant="20" id="uBp-DF-zhb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Правила" id="n6P-Q4-nyf"/>
-                    <size key="freeformSize" width="315" height="568"/>
+                    <size key="freeformSize" width="400" height="899"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQ5-ez-5W3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="mq0-Bq-f93" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3021.5625" y="1603.5211267605634"/>
+            <point key="canvasLocation" x="3015.9420289855075" y="1604.1294642857142"/>
         </scene>
         <!--Выберите категорию-->
         <scene sceneID="gQE-OE-h6H">
             <objects>
                 <tableViewController id="AJa-vF-rGZ" customClass="WordCategoriesTableViewController" customModule="Alias" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="kYa-9j-XQC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.65476781129999995" green="0.8452416062" blue="0.85222816469999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="wordsPackTitleCell" textLabel="hgy-N6-CCd" style="IBUITableViewCellStyleDefault" id="cRT-7u-BLl">
-                                <rect key="frame" x="0.0" y="44.5" width="320" height="54.5"/>
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="54.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cRT-7u-BLl" id="X7Q-Lk-08P">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="54.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="54.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hgy-N6-CCd">
-                                            <rect key="frame" x="16" y="0.0" width="288" height="54.5"/>
+                                            <rect key="frame" x="20" y="0.0" width="374" height="54.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
                                             <color key="textColor" systemColor="systemTealColor"/>
@@ -598,12 +612,26 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BDO-9e-9dX" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="2Ak-TE-vn5">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="103"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <textAttributes key="largeTitleTextAttributes">
-                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="35"/>
-                            <color key="textColor" systemColor="systemIndigoColor"/>
+                        <color key="backgroundColor" red="0.65476781129999995" green="0.8452416062" blue="0.85222816469999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        </textAttributes>
+                        <navigationBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" red="0.65476781129999995" green="0.8452416062" blue="0.85222816469999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <textAttributes key="titleTextAttributes">
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
+                                <color key="textColor" systemColor="systemIndigoColor"/>
+                            </textAttributes>
+                            <textAttributes key="largeTitleTextAttributes">
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="35"/>
+                                <color key="textColor" systemColor="systemIndigoColor"/>
+                            </textAttributes>
+                        </navigationBarAppearance>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -620,10 +648,12 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cg2-at-fLd" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="XbF-iD-NJ4">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="97"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.65476781129999995" green="0.8452416062" blue="0.85222816469999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" systemColor="systemTealColor"/>
                         <navigationBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" red="0.65476781129999995" green="0.8452416062" blue="0.85222816469999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <textAttributes key="titleTextAttributes">
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="22"/>
                                 <color key="textColor" systemColor="systemIndigoColor"/>
@@ -659,17 +689,8 @@
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
