@@ -6,14 +6,12 @@
 //
 
 import UIKit
-
 class AliasGameViewController: UIViewController {
     
     @IBOutlet var timerLabel: UILabel!
     @IBOutlet var scoreLabel: UILabel!
     @IBOutlet var wordsLabel: UILabel!
     @IBOutlet var correctButton: UIButton!
-    
     
     var aliasGameManager: AliasGameManager!
     private var timer = Timer()
@@ -36,22 +34,24 @@ class AliasGameViewController: UIViewController {
         if correctButton.titleLabel?.text == "Начать игру" {
             timer = Timer.scheduledTimer(timeInterval: 1.0, target:self, selector: #selector(updateTimer), userInfo:nil, repeats: true)
         }
+        
         let font = UIFont(name: "Marker Felt", size: 35) ?? .systemFont(ofSize: 35)
         let attributedText: NSAttributedString? = .init(string: "Правильно",
                                                         attributes: [.font: font,
                                                                      .foregroundColor: UIColor.green])
         correctButton.setAttributedTitle(attributedText, for: .normal)
+        SoundManager.shared.playSound(for: .correct)
         aliasGameManager.scoreUp()
         updateUI()
     }
     
     @IBAction func skipButtonPressed() {
+        SoundManager.shared.playSound(for: .skip)
         aliasGameManager.scoreDown()
         updateUI()
     }
     
     @IBAction func resetButtonPressed() {
-       
     }
     
     private func updateUI() {

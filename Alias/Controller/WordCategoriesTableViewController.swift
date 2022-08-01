@@ -9,7 +9,7 @@ import UIKit
 
 class WordCategoriesTableViewController: UITableViewController {
     
-    let aliasWordsPack = AliasWordsPack.getAliasWordsCategories()
+    let aliasWordsPack = AliasDataManager.shared.getAliasWordsCategories()
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -22,7 +22,12 @@ class WordCategoriesTableViewController: UITableViewController {
         let wordsPackTitle = aliasWordsPack[indexPath.row]
         var content = cell.defaultContentConfiguration()
         
-        content.text = wordsPackTitle.title
+        let font = UIFont(name: "Marker Felt", size: 28) ?? .systemFont(ofSize: 28)
+        
+        let attributedText: NSAttributedString? = .init(string: wordsPackTitle.title,
+                                                        attributes: [.font: font,
+                                                                     .foregroundColor: UIColor.systemTeal])
+        content.attributedText = attributedText
         
         cell.contentConfiguration = content
 
