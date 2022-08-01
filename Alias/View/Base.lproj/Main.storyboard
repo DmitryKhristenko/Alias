@@ -412,7 +412,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9W-i5-HTs">
-                                <rect key="frame" x="0.0" y="56" width="400" height="699"/>
+                                <rect key="frame" x="0.0" y="108" width="400" height="647"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e71-eR-URw">
                                         <rect key="frame" x="0.0" y="0.0" width="400" height="1200"/>
@@ -666,7 +666,7 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="97"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.65476781129999995" green="0.8452416062" blue="0.85222816469999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" systemColor="systemTealColor"/>
+                        <color key="tintColor" systemColor="systemIndigoColor"/>
                         <navigationBarAppearance key="standardAppearance">
                             <color key="backgroundColor" red="0.65476781129999995" green="0.8452416062" blue="0.85222816469999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <textAttributes key="titleTextAttributes">
