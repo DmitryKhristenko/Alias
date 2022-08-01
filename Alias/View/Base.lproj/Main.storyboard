@@ -107,7 +107,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dOc-ae-1Yc">
-                                <rect key="frame" x="20" y="111" width="280" height="84.5"/>
+                                <rect key="frame" x="20" y="97" width="280" height="84.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gfS-Oe-yEI">
                                         <rect key="frame" x="0.0" y="0.0" width="135" height="84.5"/>
@@ -142,7 +142,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="очки" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Yo-I4-flC">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Yo-I4-flC">
                                                 <rect key="frame" x="0.0" y="47.5" width="135" height="33"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                                                 <nil key="textColor"/>
@@ -159,58 +159,69 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нажми на &quot;Начать игру&quot;,   когда будешь готов  " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="XXB-5w-KUR">
-                                <rect key="frame" x="50" y="277.5" width="220" height="13"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="XXB-5w-KUR">
+                                <rect key="frame" x="50" y="242" width="220" height="84"/>
+                                <string key="text">Нажми
+"Начать игру"   когда будешь готов</string>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="55"/>
                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fbM-u4-DFu">
-                                <rect key="frame" x="20" y="340.5" width="280" height="177.5"/>
+                                <rect key="frame" x="20" y="378" width="280" height="170"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWS-ge-FdU">
-                                        <rect key="frame" x="5" y="0.0" width="270" height="52.5"/>
+                                        <rect key="frame" x="5" y="0.0" width="270" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="rHO-Sq-Mza"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Сбросить"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Сбросить" cornerStyle="large">
+                                        <buttonConfiguration key="configuration" style="plain" title="В начало" cornerStyle="large">
                                             <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" red="1" green="0.58431372549019611" blue="0.0" alpha="0.69968439569536434" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.792156862745098" green="0.58431372549019611" blue="0.36078431372549019" alpha="0.69968439569536434" colorSpace="custom" customColorSpace="sRGB"/>
                                             </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="35"/>
-                                            <color key="baseForegroundColor" red="0.58039215686274503" green="0.12941176470588234" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                            <color key="baseForegroundColor" red="0.31764705882352939" green="0.19607843137254902" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="resetButtonPressed" destination="wB4-QZ-DF3" eventType="touchUpInside" id="Q0B-DZ-jhe"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ar6-yV-fhm">
-                                        <rect key="frame" x="5" y="62.5" width="270" height="52.5"/>
+                                        <rect key="frame" x="5" y="50" width="270" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Nid-yj-Jlr"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Пропустить"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Пропустить" cornerStyle="large">
                                             <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" red="1" green="0.58431372549019611" blue="0.0" alpha="0.70260761589403975" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="1" green="0.5607843137254902" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="35"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                            <color key="baseForegroundColor" red="0.31764705882352939" green="0.19607843137254902" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="skipButtonPressed" destination="wB4-QZ-DF3" eventType="touchUpInside" id="am1-oj-wzR"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHV-EF-KNj">
-                                        <rect key="frame" x="5" y="125" width="270" height="52.5"/>
+                                        <rect key="frame" x="5" y="110" width="270" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="eDl-uE-CBS"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Правильно"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Правильно" cornerStyle="large">
                                             <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" red="1" green="0.58431372549019611" blue="0.0" alpha="0.70012417218543044" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.49019607843137253" green="0.80784313725490198" blue="0.074509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="35"/>
-                                            <color key="baseForegroundColor" red="0.10648657906181111" green="0.63529411764705879" blue="0.23037539797518899" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                            <color key="baseForegroundColor" red="0.31764705882352939" green="0.19607843137254902" blue="0.32156862745098036" alpha="0.69968439569536434" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="correctButtonPressed" destination="wB4-QZ-DF3" eventType="touchUpInside" id="F7u-XK-968"/>
@@ -232,13 +243,12 @@
                         <constraints>
                             <constraint firstItem="ILn-4D-Hmd" firstAttribute="trailing" secondItem="fbM-u4-DFu" secondAttribute="trailing" constant="20" id="7nN-Nf-VTe"/>
                             <constraint firstAttribute="trailing" secondItem="dOc-ae-1Yc" secondAttribute="trailing" constant="20" id="Dag-h6-fd4"/>
-                            <constraint firstItem="dOc-ae-1Yc" firstAttribute="top" secondItem="ILn-4D-Hmd" secondAttribute="top" constant="20" id="IUl-SW-NS4"/>
+                            <constraint firstItem="dOc-ae-1Yc" firstAttribute="top" secondItem="ILn-4D-Hmd" secondAttribute="top" constant="6" id="IUl-SW-NS4"/>
                             <constraint firstItem="XXB-5w-KUR" firstAttribute="centerY" secondItem="oIE-aZ-wqs" secondAttribute="centerY" id="JK4-Ka-hyO"/>
-                            <constraint firstItem="fbM-u4-DFu" firstAttribute="top" secondItem="XXB-5w-KUR" secondAttribute="bottom" constant="50" id="OY1-YC-sgk"/>
                             <constraint firstItem="ILn-4D-Hmd" firstAttribute="trailing" secondItem="XXB-5w-KUR" secondAttribute="trailing" constant="50" id="Tiw-b0-l7f"/>
                             <constraint firstItem="XXB-5w-KUR" firstAttribute="leading" secondItem="ILn-4D-Hmd" secondAttribute="leading" constant="50" id="kwv-ca-IxX"/>
                             <constraint firstItem="fbM-u4-DFu" firstAttribute="leading" secondItem="ILn-4D-Hmd" secondAttribute="leading" constant="20" id="nMi-3G-Wko"/>
-                            <constraint firstItem="ILn-4D-Hmd" firstAttribute="bottom" secondItem="fbM-u4-DFu" secondAttribute="bottom" constant="50" id="skN-Mu-azt"/>
+                            <constraint firstItem="ILn-4D-Hmd" firstAttribute="bottom" secondItem="fbM-u4-DFu" secondAttribute="bottom" constant="20" id="skN-Mu-azt"/>
                             <constraint firstItem="dOc-ae-1Yc" firstAttribute="leading" secondItem="oIE-aZ-wqs" secondAttribute="leading" constant="20" id="v2U-lB-5OB"/>
                         </constraints>
                     </view>
@@ -266,44 +276,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Панчлайн" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNI-CP-1KJ">
-                                <rect key="frame" x="20" y="177" width="280" height="22"/>
+                                <rect key="frame" x="20" y="149" width="280" height="22"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbu-gk-brO">
-                                <rect key="frame" x="20" y="465.5" width="280" height="52.5"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Сбросить"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Сбросить" cornerStyle="large">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" red="1" green="0.58431372549019611" blue="0.0" alpha="0.70012417218543044" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="35"/>
-                                    <color key="baseForegroundColor" red="0.58039215686274503" green="0.12941176470588234" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="resetButtonPressed" destination="W5M-DB-Wfa" eventType="touchUpInside" id="wHm-UB-Vjw"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Предисловие к шутке" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zw3-LT-vR8">
-                                <rect key="frame" x="20" y="141" width="280" height="26"/>
+                                <rect key="frame" x="20" y="111" width="280" height="26"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="B4Z-dO-mA8">
-                                <rect key="frame" x="64.5" y="240" width="191.5" height="88.5"/>
+                                <rect key="frame" x="57" y="234.5" width="206" height="99"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваш результат:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3kF-kV-vfR">
-                                        <rect key="frame" x="10" y="10" width="171.5" height="27.5"/>
+                                        <rect key="frame" x="17.5" y="10" width="171.5" height="27.5"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Результат" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VT4-zN-GXA">
-                                        <rect key="frame" x="26" y="45.5" width="139.5" height="33"/>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                        <rect key="frame" x="10" y="45.5" width="186" height="43.5"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -316,21 +311,63 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vhY-1Z-3bt">
+                                <rect key="frame" x="20" y="430" width="280" height="118"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbu-gk-brO">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="nSR-W6-QY3"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Сбросить"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="В начало" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.792156862745098" green="0.58431372549019611" blue="0.36078431372549019" alpha="0.70012417218543044" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                            <color key="baseForegroundColor" red="0.31764705882352939" green="0.19607843137254902" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="resetButtonPressed" destination="W5M-DB-Wfa" eventType="touchUpInside" id="wHm-UB-Vjw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwD-e3-y3s">
+                                        <rect key="frame" x="0.0" y="58" width="280" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="X3e-LM-ABS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Правильно"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Продолжить игру" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.49019607840000001" green="0.80784313730000001" blue="0.074509803920000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                            <color key="baseForegroundColor" red="0.31764705879999999" green="0.1960784314" blue="0.32156862749999998" alpha="0.69968439569999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="continueButtonPressed" destination="W5M-DB-Wfa" eventType="touchUpInside" id="vcF-QO-kzO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qDO-yY-fAn"/>
                         <color key="backgroundColor" red="0.69860762357711792" green="0.8622933030128479" blue="0.87059944868087769" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zw3-LT-vR8" firstAttribute="leading" secondItem="qDO-yY-fAn" secondAttribute="leading" constant="20" id="BWh-zQ-GNV"/>
-                            <constraint firstItem="qDO-yY-fAn" firstAttribute="bottom" secondItem="dbu-gk-brO" secondAttribute="bottom" constant="50" id="EK9-Ef-QCS"/>
                             <constraint firstItem="qNI-CP-1KJ" firstAttribute="leading" secondItem="qDO-yY-fAn" secondAttribute="leading" constant="20" id="Epe-Su-eDb"/>
                             <constraint firstItem="B4Z-dO-mA8" firstAttribute="centerY" secondItem="bhg-4t-MIY" secondAttribute="centerY" id="Heo-oa-qsP"/>
                             <constraint firstItem="B4Z-dO-mA8" firstAttribute="centerX" secondItem="bhg-4t-MIY" secondAttribute="centerX" id="LB8-eq-6bg"/>
                             <constraint firstItem="qDO-yY-fAn" firstAttribute="trailing" secondItem="zw3-LT-vR8" secondAttribute="trailing" constant="20" id="NrP-z9-Fk1"/>
-                            <constraint firstItem="zw3-LT-vR8" firstAttribute="top" secondItem="qDO-yY-fAn" secondAttribute="top" constant="50" id="V5O-7z-ted"/>
+                            <constraint firstItem="zw3-LT-vR8" firstAttribute="top" secondItem="qDO-yY-fAn" secondAttribute="top" constant="20" id="V5O-7z-ted"/>
+                            <constraint firstItem="qDO-yY-fAn" firstAttribute="trailing" secondItem="vhY-1Z-3bt" secondAttribute="trailing" constant="20" id="XgN-oB-FZl"/>
+                            <constraint firstItem="vhY-1Z-3bt" firstAttribute="leading" secondItem="qDO-yY-fAn" secondAttribute="leading" constant="20" id="Yah-JD-QCP"/>
                             <constraint firstItem="qDO-yY-fAn" firstAttribute="trailing" secondItem="qNI-CP-1KJ" secondAttribute="trailing" constant="20" id="hcO-dB-yeb"/>
-                            <constraint firstItem="qNI-CP-1KJ" firstAttribute="top" secondItem="zw3-LT-vR8" secondAttribute="bottom" constant="10" id="ir6-ky-Hbn"/>
-                            <constraint firstItem="dbu-gk-brO" firstAttribute="leading" secondItem="qDO-yY-fAn" secondAttribute="leading" constant="20" id="kdM-0Z-KN1"/>
-                            <constraint firstItem="qDO-yY-fAn" firstAttribute="trailing" secondItem="dbu-gk-brO" secondAttribute="trailing" constant="20" id="rcK-bc-EPh"/>
+                            <constraint firstItem="qNI-CP-1KJ" firstAttribute="top" secondItem="zw3-LT-vR8" secondAttribute="bottom" constant="12" id="ir6-ky-Hbn"/>
+                            <constraint firstItem="qDO-yY-fAn" firstAttribute="bottom" secondItem="vhY-1Z-3bt" secondAttribute="bottom" constant="20" id="nUZ-zq-RF3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Результат" id="uGL-bC-pDK"/>
@@ -349,11 +386,11 @@
             <objects>
                 <viewController id="A9t-MI-qT2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y2n-Hy-qnR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="822"/>
+                        <rect key="frame" x="0.0" y="0.0" width="315" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iea-UF-tEO">
-                                <rect key="frame" x="71" y="754.5" width="272" height="52.5"/>
+                                <rect key="frame" x="21.5" y="480.5" width="272" height="52.5"/>
                                 <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Вернуться назад" cornerStyle="capsule">
@@ -368,79 +405,79 @@
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c9W-i5-HTs">
-                                <rect key="frame" x="0.0" y="103" width="414" height="639"/>
+                                <rect key="frame" x="0.0" y="103" width="315" height="365"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e71-eR-URw">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1400"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="1400"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alias: Скажи иначе" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQs-u7-XR2">
-                                                <rect key="frame" x="20" y="5" width="374" height="21"/>
+                                                <rect key="frame" x="20" y="5" width="275" height="21"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfD-27-9gs">
-                                                <rect key="frame" x="20" y="31" width="374" height="179.5"/>
+                                                <rect key="frame" x="20" y="31" width="275" height="233"/>
                                                 <string key="text">В игру играют командами из двух или более человек/ Задача каждого игрока команды - объяснить как можно больше слов отображаемых на экране за ограниченное время другими словами, используя, например синонимы, антонимы и подсказки так, чтобы члены вашей команды смогли отгадать как можно больше слов прежде чем истечет время. чем больше слов отгадала команда, тем больше она заработает баллов.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Объяснение слов" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gfg-uc-4Ly">
-                                                <rect key="frame" x="20" y="220.5" width="374" height="21"/>
+                                                <rect key="frame" x="20" y="274" width="275" height="21"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuK-TG-Gh2">
-                                                <rect key="frame" x="20" y="246.5" width="374" height="143.5"/>
+                                                <rect key="frame" x="20" y="300" width="275" height="215"/>
                                                 <string key="text">При объяснении слов нельзя упоминать какую-либо часть слова. Например, слово "кофеварка" нельзя объяснять как "аппарат для варки кофе". Правильный способ объяснения будет следующий: "аппарат для приготовления крепкого напитка, который обычно пьют за завтраком". Можно использовать синонимы - то есть вы можете сказать "кипятить", но не "варить".</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmW-Mf-mAx">
-                                                <rect key="frame" x="20" y="410" width="374" height="90"/>
+                                                <rect key="frame" x="20" y="535" width="275" height="125.5"/>
                                                 <string key="text">Вы можете использовать антонимы. Слово "большой" может быть объянено как "антоним слова маленький". Вы не можете использовать иностранные языки, за исключением тех случаев, когда все игроки согласились с этим.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPb-Pl-yet">
-                                                <rect key="frame" x="20" y="520" width="374" height="143.5"/>
+                                                <rect key="frame" x="20" y="680.5" width="275" height="197"/>
                                                 <string key="text">Отгаданное слово должно точно совпадать. Объясняющий игрок помогает отгадывающим найти правильную форму слова. Если слово состоит из двух частей и кто-то отгадывающим найти правильную форму слова. Если слово состоит из двух частей и кто-то отгадывает первую часть, вы потом можете использовать эту часть слова в дальнейшем объяснении.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Начисление очков" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJa-Nq-DbQ">
-                                                <rect key="frame" x="20" y="683.5" width="374" height="21"/>
+                                                <rect key="frame" x="20" y="897.5" width="275" height="21"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCo-7y-mVc">
-                                                <rect key="frame" x="20" y="709.5" width="374" height="72"/>
+                                                <rect key="frame" x="20" y="923.5" width="275" height="90"/>
                                                 <string key="text">За каждое отгаданное слово команда получает одно очко, а за пропущенное или отгаданное с нарушением - штрафуется (в зависимости от настроек).</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMe-Oc-H9g">
-                                                <rect key="frame" x="20" y="801.5" width="374" height="304.5"/>
+                                                <rect key="frame" x="20" y="1033.5" width="275" height="412"/>
                                                 <string key="text">Если объясняющий игрок допускает ошибку - например, слово не будет принято и команда потеряет 1 очко. поэтому каждая команда должна внимательно слушать объяснения других команд. Если слово кажется слишком тяжелым, вы можете его пропустить, но помните, что за это вы потеряете очки. Однако, иногда это того стоит, так как вы можете сэкономить время. "Последнее слово для всех" - если включена эта опция, по истечении времени раунда, слово могут отгадывать все команды. В этом случае 1 очко получит команда отгадавшее слово. Победителем считается команда. набравшая необходимое для победы количество очков. Если на момент завершения победного раунда у команд одинаковое количество очков - проводиться дополнительный раунд (Овертайм).</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Задания" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5T-Rp-HKI">
-                                                <rect key="frame" x="20" y="1126" width="374" height="21"/>
+                                                <rect key="frame" x="20" y="1465.5" width="275" height="21"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGp-lI-Chm">
-                                                <rect key="frame" x="20" y="1157" width="374" height="143.5"/>
+                                                <rect key="frame" x="20" y="1496.5" width="275" height="197"/>
                                                 <string key="text">Если в раунде есть задание - команда может получить бонусные балы за его выполнение. Если вам удастся объяснить все слова в соответствии с заданием, то ваша команда получает бонусные очки, но только если другие команды считают ваше выполнение убедительным. Количество бонусных балов определяется случайно в интервале от 7 до 10.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
@@ -507,12 +544,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Правила" id="n6P-Q4-nyf"/>
-                    <size key="freeformSize" width="414" height="842"/>
+                    <size key="freeformSize" width="315" height="568"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQ5-ez-5W3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="mq0-Bq-f93" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3027.536231884058" y="1603.7946428571429"/>
+            <point key="canvasLocation" x="3021.5625" y="1603.5211267605634"/>
         </scene>
         <!--Выберите категорию-->
         <scene sceneID="gQE-OE-h6H">
