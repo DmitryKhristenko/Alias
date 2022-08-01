@@ -26,18 +26,24 @@ class AliasGameViewController: UIViewController {
         
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         let font = UIFont(name: "Marker Felt", size: 35) ?? .systemFont(ofSize: 35)
         let attributedText: NSAttributedString? = .init(string: "Начать игру",
                                                         attributes: [.font: font,
                                                                      .foregroundColor: UIColor.green])
         correctButton.setAttributedTitle(attributedText, for: .normal)
+        title = "Alias Раунд # \(aliasGameManager.round)"
+
+        secondsPassed = 0
         timerLabel.text = String(totalTime - secondsPassed)
+        
+        updateUI()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let resultsVC = segue.destination as? ResultsViewController else { return }
-        print(aliasGameManager.score)
         resultsVC.aliasGameManager = aliasGameManager
+        aliasGameManager.nextRound()
     }
     
     @IBAction func correctButtonPressed() {
@@ -65,10 +71,6 @@ class AliasGameViewController: UIViewController {
         navigationController?.popToRootViewController(animated: true)
     }
     
-    @IBAction func unwind(_ unwindSegue: UIStoryboardSegue) {
-        print("YES")
-    }
-    
     private func updateUI() {
         scoreLabel.text = String(aliasGameManager.score)
         wordsLabel.text = aliasGameManager.getWord()
@@ -80,8 +82,6 @@ class AliasGameViewController: UIViewController {
             timerLabel.text = String(totalTime - secondsPassed)
         } else {
             timer.invalidate()
-            secondsPassed = 0
-            aliasGameManager.nextRound()
             performSegue(withIdentifier: "showResults", sender: nil)
         }
     }

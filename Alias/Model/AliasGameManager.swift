@@ -10,10 +10,18 @@ struct AliasGameManager {
         case action = "ДЕЙСТВИЕ"
     }
     
-    var score = 0 {
+    var score: String {
+        return String(currentScore)
+    }
+    
+    var round: String {
+        return String(currentRound)
+    }
+    
+    private var currentScore = 0 {
         didSet {
-            if score < 0 {
-                score = 0
+            if currentScore < 0 {
+                currentScore = 0
             }
         }
     }
@@ -41,14 +49,14 @@ struct AliasGameManager {
     
     mutating func nextRound() {
         currentRound += 1
-        score = 0
+        currentScore = 0
     }
     
     mutating func scoreUp() {
         if words[wordIndex] == ActionWord.action.rawValue {
-            score += 3
+            currentScore += 3
         } else {
-            score += 1
+            currentScore += 1
         }
         
         wordIndex += 1
@@ -56,9 +64,9 @@ struct AliasGameManager {
     
     mutating func scoreDown() {
         if words[wordIndex] == ActionWord.action.rawValue {
-            score -= 3
+            currentScore -= 3
         } else {
-            score -= 1
+            currentScore -= 1
         }
         
         wordIndex += 1
