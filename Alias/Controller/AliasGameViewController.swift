@@ -82,7 +82,7 @@ class AliasGameViewController: UIViewController {
     }
     
     private func setCorrectButtonTitle(_ string: String) {
-        let font = UIFont(name: "Marker Felt", size: 35) ?? .systemFont(ofSize: 35)
+        let font = UIFont(name: "Marker Felt", size: 30) ?? .systemFont(ofSize: 30)
         let attributedText: NSAttributedString? = .init(string: string,
                                                         attributes: [.font: font,
                                                                      .foregroundColor: UIColor(hue: 2.98, saturation: 0.39, brightness: 0.32, alpha: 1)])
