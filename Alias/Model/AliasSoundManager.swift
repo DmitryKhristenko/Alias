@@ -17,7 +17,6 @@ struct SoundManager {
     
     private var player: AVAudioPlayer!
     
-    
     mutating func playSound(for soundType: SoundType) {
         let url = Bundle.main.url(forResource: soundType.rawValue, withExtension: "mp3")
         player = try! AVAudioPlayer(contentsOf: url!)
@@ -30,7 +29,5 @@ struct SoundManager {
         player.prepareToPlay()
     }
     
-    private init() {
-    }
-    
+    private init() {}
 }

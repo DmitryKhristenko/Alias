@@ -8,15 +8,5 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    let joke = JokeManager()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-    
-    @IBAction func unwindSegue(_ sender: UIStoryboardSegue) {
-       }
-    
+    @IBAction func unwindSegue(_ sender: UIStoryboardSegue) {}
 }

@@ -8,6 +8,7 @@
 import Foundation
 
 struct JokeManager {
+    static let shared = JokeManager()
     
     private let jokeURL = "https://joke.deno.dev/"
     
@@ -23,7 +24,9 @@ struct JokeManager {
                 
                 if let safeData = data {
                     if let joke = parseJSON(safeData) {
-                        completion(joke)
+                        DispatchQueue.main.async {
+                            completion(joke)
+                        }
                     }
                 }
             }
@@ -42,4 +45,6 @@ struct JokeManager {
             return nil
         }
     }
+    
+    private init() {}
 }
