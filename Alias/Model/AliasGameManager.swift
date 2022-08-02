@@ -29,9 +29,9 @@ struct AliasGameManager {
     }
     
     private let startPhrase = """
-        Нажми
-        "Начать игру"
-        когда будешь готов
+    Нажми
+    "Начать игру"
+    когда будешь готов
     """
     
     private var currentRound = 0 {
