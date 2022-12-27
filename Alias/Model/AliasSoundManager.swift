@@ -9,25 +9,28 @@ import AVFoundation
 
 struct SoundManager {
     enum SoundType: String {
-        case correct = "correct"
-        case skip = "skip"
+        case correct
+        case skip
     }
-    
     static var shared = SoundManager()
-    
     private var player: AVAudioPlayer!
-    
     mutating func playSound(for soundType: SoundType) {
         let url = Bundle.main.url(forResource: soundType.rawValue, withExtension: "mp3")
-        player = try! AVAudioPlayer(contentsOf: url!)
-        player.play()
+        do {
+            player = try AVAudioPlayer(contentsOf: url!)
+            player.play()
+        } catch {
+            Logger.shared.debugPrint(error)
+        }
     }
-    
-    mutating func prepare () {
+    mutating func prepare() {
         let url = Bundle.main.url(forResource: SoundType.skip.rawValue, withExtension: "mp3")
-        player = try! AVAudioPlayer(contentsOf: url!)
-        player.prepareToPlay()
+        do {
+            player = try AVAudioPlayer(contentsOf: url!)
+            player.prepareToPlay()
+        } catch {
+            Logger.shared.debugPrint(error)
+        }
     }
-    
     private init() {}
 }

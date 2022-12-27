@@ -13,7 +13,6 @@ struct AliasJSONModel: Decodable {
 
 struct AliasDataManager {
     static let shared = AliasDataManager()
-    
     private let sampleWordsPack = [AliasWordsPack(
         title: "Животные",
         words: [
@@ -30,20 +29,15 @@ struct AliasDataManager {
             "Жираф", "Шимпанзе", "Жучок"
         ]
     )]
-    
     func getAliasWordsCategories() -> [AliasWordsPack] {
         return fetchData() ?? sampleWordsPack
     }
-    
     private func fetchData() -> [AliasWordsPack]? {
         guard let sourcesURL = Bundle.main.url(forResource: "AliasWordCategories", withExtension: "json") else { return nil }
         guard let aliasData = try? Data(contentsOf: sourcesURL) else { return nil }
         guard let aliasWordPacksFromJSON = try? JSONDecoder().decode(AliasJSONModel.self, from: aliasData) else { return nil }
-        
         let aliasWordPacks = aliasWordPacksFromJSON.aliasWordPacks
-        
         return aliasWordPacks
     }
-    
     private init() {}
 }

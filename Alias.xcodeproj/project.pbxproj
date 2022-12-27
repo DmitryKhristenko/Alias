@@ -15,6 +15,7 @@
 		B506E104289272DA00C3ADE8 /* AliasWordsPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B506E103289272DA00C3ADE8 /* AliasWordsPack.swift */; };
 		B506E1072892765300C3ADE8 /* AliasGameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B506E1062892765300C3ADE8 /* AliasGameManager.swift */; };
 		B506E11F289471E000C3ADE8 /* AliasSoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B506E11E289471E000C3ADE8 /* AliasSoundManager.swift */; };
+		B5DCE116295AF8C50025F0C8 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCE115295AF8C50025F0C8 /* Logger.swift */; };
 		E786F02D2894833400171591 /* AliasWordCategories.json in Resources */ = {isa = PBXBuildFile; fileRef = E786F02C2894833400171591 /* AliasWordCategories.json */; };
 		E786F02F2894836D00171591 /* AliasDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E786F02E2894836D00171591 /* AliasDataManager.swift */; };
 		E788B2AB2896E35C00BB75B8 /* correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E788B2AA2896E35C00BB75B8 /* correct.mp3 */; };
@@ -37,6 +38,7 @@
 		B506E103289272DA00C3ADE8 /* AliasWordsPack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasWordsPack.swift; sourceTree = "<group>"; };
 		B506E1062892765300C3ADE8 /* AliasGameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasGameManager.swift; sourceTree = "<group>"; };
 		B506E11E289471E000C3ADE8 /* AliasSoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasSoundManager.swift; sourceTree = "<group>"; };
+		B5DCE115295AF8C50025F0C8 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		E786F02C2894833400171591 /* AliasWordCategories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AliasWordCategories.json; sourceTree = "<group>"; };
 		E786F02E2894836D00171591 /* AliasDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasDataManager.swift; sourceTree = "<group>"; };
 		E788B2AA2896E35C00BB75B8 /* correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correct.mp3; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			children = (
 				E79A610728903883007E9C00 /* AppDelegate.swift */,
 				E79A610928903883007E9C00 /* SceneDelegate.swift */,
+				B5DCE115295AF8C50025F0C8 /* Logger.swift */,
 				E79A611528903885007E9C00 /* Info.plist */,
 			);
 			path = SupportingFiles;
@@ -156,6 +159,7 @@
 				E79A610028903883007E9C00 /* Sources */,
 				E79A610128903883007E9C00 /* Frameworks */,
 				E79A610228903883007E9C00 /* Resources */,
+				B5DCE114295AF5600025F0C8 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -216,6 +220,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B5DCE114295AF5600025F0C8 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E79A610028903883007E9C00 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -230,6 +256,7 @@
 				E79A610A28903883007E9C00 /* SceneDelegate.swift in Sources */,
 				0A2ECBE02892FE160025DAD4 /* JokeManager.swift in Sources */,
 				B506E104289272DA00C3ADE8 /* AliasWordsPack.swift in Sources */,
+				B5DCE116295AF8C50025F0C8 /* Logger.swift in Sources */,
 				0A2ECBE22892FE390025DAD4 /* JokeData.swift in Sources */,
 				E7A82C7F2892FA900061AF48 /* WordCategoriesTableViewController.swift in Sources */,
 				B506E11F289471E000C3ADE8 /* AliasSoundManager.swift in Sources */,
@@ -388,7 +415,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -418,7 +445,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
